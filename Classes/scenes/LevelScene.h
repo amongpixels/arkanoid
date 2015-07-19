@@ -29,6 +29,8 @@ private:
   std::unique_ptr <arkanoid::Paddle> paddle;
   
   void onMouseMove (Event * );
+  bool onContactBegin (cocos2d::PhysicsContact &);
+  
   void createWorldBounds (float worldWidth, float worldHeight);
   void createBricks ();
 public:

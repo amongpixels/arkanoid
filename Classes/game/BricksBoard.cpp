@@ -29,12 +29,12 @@ void arkanoid::BricksBoard::createBoard(int width, int height) {
     
     for (int y = 0 ; y < this->boardHeight ; y++) {
       
-      this->bricks.push_back(std::unique_ptr<arkanoid::Brick>(new Brick(offsetX, offsetY)));
+      this->bricks.push_back(std::unique_ptr<arkanoid::Brick>(new Brick(BRICK_RED, offsetX, offsetY)));
       
-      offsetY += this->bricks.back()->getSprite()->getContentSize().height;
+      offsetY += this->bricks.back()->getContentSize().height;
     }
     
-    offsetX += this->bricks.back()->getSprite()->getContentSize().width;
+    offsetX += this->bricks.back()->getContentSize().width;
   }
 }
 

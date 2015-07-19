@@ -28,6 +28,31 @@ void LevelScene::onMouseMove(Event* event) {
   cocos2d::log(str.c_str());
 }
 
+bool LevelScene::onContactBegin(cocos2d::PhysicsContact& contact) {
+  auto nodeA = contact.getShapeA()->getBody()->getNode();
+  auto nodeB = contact.getShapeB()->getBody()->getNode();
+  
+  arkanoid::Brick * brick = NULL;
+
+  if (nodeA && nodeB) {
+    // Check if we are dealing with ball-brick collision
+    if (nodeA->getTag() == BRICK_TAG && nodeB->getTag() == BALL_TAG) {
+      brick = (arkanoid::Brick *)(nodeA);
+    } else if (nodeA->getTag() == BALL_TAG && nodeB->getTag() == BRICK_TAG) {
+      brick = (arkanoid::Brick *)(nodeB);
+    }
+    
+    if (brick) {
+      brick->destroy();
+    }
+  }
+  
+  cocos2d::log("collision");
+
+  //bodies can collide
+  return true;
+}
+
 void LevelScene::createWorldBounds(float worldWidth, float worldHeight) {
 
   cocos2d::Vec2 positions [] = {
@@ -57,8 +82,14 @@ void LevelScene::createBricks() {
   this->bricksBoard->createBoard(4, 4);
   
   for (auto brick : * this->bricksBoard->getBricks()) {
-    this->addChild(brick->getSprite());
+    this->addChild(brick.get());
   }
+  
+  auto contactListener = cocos2d::EventListenerPhysicsContact::create();
+  contactListener->onContactBegin = CC_CALLBACK_1(LevelScene::onContactBegin, this);
+  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
+
+  //cocos2d::schedule(CC_SCHEDULE_SELECTOR(PhysicsDemoCollisionProcessing::tick), 0.3f);
   
 }
 

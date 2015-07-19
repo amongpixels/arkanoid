@@ -19,22 +19,25 @@
 #define BRICK_TAG 10
 
 namespace arkanoid {
-  class Brick {
+  class Brick : public cocos2d::Sprite {
   private:
     bool destroyed;
-    
-    cocos2d::Sprite * sprite;
-    cocos2d::PhysicsBody * physicsBody;
-    
+    int type;
     bool onContactBegin(cocos2d::PhysicsContact& contact);
     
+    void initPhysicsBody ();
+    //void initCollisions ();
+    
   public:
+    
     static char * spritePaths [BRICK_TYPES_COUNT];
     static cocos2d::PhysicsMaterial material;
     
-    Brick(float, float);
-    cocos2d::Sprite * getSprite();
-    virtual ~Brick();
+    void destroy();
+    
+    Brick(int, float, float);
+    //cocos2d::Sprite * getSprite();
+    //virtual ~Brick();
 
   };
 }

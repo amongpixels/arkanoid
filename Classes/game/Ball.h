@@ -8,6 +8,8 @@
 #ifndef BALL_H
 #define	BALL_H
 
+#define BALL_TAG 11
+
 #include "cocos2d.h"
 #include "CollisionMasks.h"
 

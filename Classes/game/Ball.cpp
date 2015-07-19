@@ -18,6 +18,7 @@ arkanoid::Ball::Ball() {
   
   this->sprite->setPosition(cocos2d::Vec2(400, 400));
   this->sprite->setPhysicsBody(this->physicsBody);
+  this->sprite->setTag(BALL_TAG);
 
   this->physicsBody->setGravityEnable(false);
 
