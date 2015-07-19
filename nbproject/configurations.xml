@@ -6,8 +6,13 @@
         <df name="game">
           <in>Ball.cpp</in>
           <in>Ball.h</in>
-          <in>Bricks.cpp</in>
-          <in>Bricks.h</in>
+          <in>Brick.cpp</in>
+          <in>Brick.h</in>
+          <in>BricksBoard.cpp</in>
+          <in>BricksBoard.h</in>
+          <in>CollisionMasks.h</in>
+          <in>GameEntity.cpp</in>
+          <in>GameEntity.h</in>
           <in>Paddle.cpp</in>
           <in>Paddle.h</in>
         </df>
@@ -769,9 +774,19 @@
       </item>
       <item path="Classes/game/Ball.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Classes/game/Bricks.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Classes/game/Brick.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Classes/game/Bricks.h" ex="false" tool="3" flavor2="0">
+      <item path="Classes/game/Brick.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/game/BricksBoard.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/game/BricksBoard.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/game/CollisionMasks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/game/GameEntity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/game/GameEntity.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes/game/Paddle.cpp" ex="false" tool="1" flavor2="0">
       </item>

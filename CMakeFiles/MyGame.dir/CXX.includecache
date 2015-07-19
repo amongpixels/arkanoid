@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp
-Bricks.h
-/home/dragomir/git/arkanoid_default/Classes/game/Bricks.h
+/home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp
+Brick.h
+/home/dragomir/git/arkanoid_default/Classes/game/Brick.h
 
-/home/dragomir/git/arkanoid_default/Classes/game/Bricks.h
-vector
--
+/home/dragomir/git/arkanoid_default/Classes/game/Brick.h
 cocos2d.h
 /home/dragomir/git/arkanoid_default/Classes/game/cocos2d.h
+CollisionMasks.h
+/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
 
 /usr/include/GLFW/glfw3.h
 stddef.h

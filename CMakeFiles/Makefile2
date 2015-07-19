@@ -59,10 +59,10 @@ CMAKE_BINARY_DIR = /home/dragomir/git/arkanoid_default
 # Target rules for target CMakeFiles/MyGame.dir
 
 # All Build rule for target.
-CMakeFiles/MyGame.dir/all: CMakeFiles/MyGame_PRE_BUILD.dir/all
 CMakeFiles/MyGame.dir/all: cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/all
 CMakeFiles/MyGame.dir/all: cocos2d/external/unzip/CMakeFiles/unzip.dir/all
 CMakeFiles/MyGame.dir/all: cocos2d/external/xxhash/CMakeFiles/xxhash.dir/all
+CMakeFiles/MyGame.dir/all: CMakeFiles/MyGame_PRE_BUILD.dir/all
 CMakeFiles/MyGame.dir/all: cocos2d/cocos/CMakeFiles/cocos2d.dir/all
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/depend
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/build

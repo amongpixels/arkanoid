@@ -6,7 +6,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/dragomir/git/arkanoid_default/Classes/AppDelegate.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o"
   "/home/dragomir/git/arkanoid_default/Classes/game/Ball.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o"
-  "/home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o"
+  "/home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o"
+  "/home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o"
   "/home/dragomir/git/arkanoid_default/Classes/game/Paddle.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o"
   "/home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o"
   "/home/dragomir/git/arkanoid_default/proj.linux/main.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"

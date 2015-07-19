@@ -32,8 +32,13 @@
         <df name="game">
           <in>Ball.cpp</in>
           <in>Ball.h</in>
-          <in>Bricks.cpp</in>
-          <in>Bricks.h</in>
+          <in>Brick.cpp</in>
+          <in>Brick.h</in>
+          <in>BricksBoard.cpp</in>
+          <in>BricksBoard.h</in>
+          <in>CollisionMasks.h</in>
+          <in>GameEntity.cpp</in>
+          <in>GameEntity.h</in>
           <in>Paddle.cpp</in>
           <in>Paddle.h</in>
         </df>

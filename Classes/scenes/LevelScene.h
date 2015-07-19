@@ -12,7 +12,7 @@
 #include "cocos2d.h"
 #include "game/Paddle.h"
 #include "game/Ball.h"
-#include "game/Bricks.h"
+#include "game/BricksBoard.h"
 
 using namespace cocos2d;
 
@@ -25,7 +25,8 @@ private:
   cocos2d::Node * worldBoundNodes [4];
   
   std::unique_ptr <arkanoid::Ball> ball;
-  std::unique_ptr <arkanoid::Bricks> bricks;
+  std::unique_ptr <arkanoid::BricksBoard> bricksBoard;
+  std::unique_ptr <arkanoid::Paddle> paddle;
   
   void onMouseMove (Event * );
   void createWorldBounds (float worldWidth, float worldHeight);
@@ -33,10 +34,6 @@ private:
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static Scene* createScene();
-    
-    
-    
-    Sprite * paddle;
 
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();

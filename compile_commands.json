@@ -16,8 +16,13 @@
 },
 {
   "directory": "/home/dragomir/git/arkanoid_default",
-  "command": "/usr/bin/g++   -DLINUX  -fno-exceptions -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall -DCOCOS2D_DEBUG=1 -I/usr/local/include/GLFW -I/usr/include/GLFW -I/home/dragomir/git/arkanoid_default/cocos2d/cocos -I/home/dragomir/git/arkanoid_default/Classes    -o CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp",
-  "file": "/home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp"
+  "command": "/usr/bin/g++   -DLINUX  -fno-exceptions -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall -DCOCOS2D_DEBUG=1 -I/usr/local/include/GLFW -I/usr/include/GLFW -I/home/dragomir/git/arkanoid_default/cocos2d/cocos -I/home/dragomir/git/arkanoid_default/Classes    -o CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp",
+  "file": "/home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp"
+},
+{
+  "directory": "/home/dragomir/git/arkanoid_default",
+  "command": "/usr/bin/g++   -DLINUX  -fno-exceptions -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall -DCOCOS2D_DEBUG=1 -I/usr/local/include/GLFW -I/usr/include/GLFW -I/home/dragomir/git/arkanoid_default/cocos2d/cocos -I/home/dragomir/git/arkanoid_default/Classes    -o CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp",
+  "file": "/home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp"
 },
 {
   "directory": "/home/dragomir/git/arkanoid_default",

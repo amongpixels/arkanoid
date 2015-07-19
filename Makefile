@@ -253,29 +253,53 @@ Classes/game/Ball.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.s
 .PHONY : Classes/game/Ball.cpp.s
 
-Classes/game/Bricks.o: Classes/game/Bricks.cpp.o
-.PHONY : Classes/game/Bricks.o
+Classes/game/Brick.o: Classes/game/Brick.cpp.o
+.PHONY : Classes/game/Brick.o
 
 # target to build an object file
-Classes/game/Bricks.cpp.o:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o
-.PHONY : Classes/game/Bricks.cpp.o
+Classes/game/Brick.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o
+.PHONY : Classes/game/Brick.cpp.o
 
-Classes/game/Bricks.i: Classes/game/Bricks.cpp.i
-.PHONY : Classes/game/Bricks.i
+Classes/game/Brick.i: Classes/game/Brick.cpp.i
+.PHONY : Classes/game/Brick.i
 
 # target to preprocess a source file
-Classes/game/Bricks.cpp.i:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.i
-.PHONY : Classes/game/Bricks.cpp.i
+Classes/game/Brick.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.i
+.PHONY : Classes/game/Brick.cpp.i
 
-Classes/game/Bricks.s: Classes/game/Bricks.cpp.s
-.PHONY : Classes/game/Bricks.s
+Classes/game/Brick.s: Classes/game/Brick.cpp.s
+.PHONY : Classes/game/Brick.s
 
 # target to generate assembly for a file
-Classes/game/Bricks.cpp.s:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.s
-.PHONY : Classes/game/Bricks.cpp.s
+Classes/game/Brick.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.s
+.PHONY : Classes/game/Brick.cpp.s
+
+Classes/game/BricksBoard.o: Classes/game/BricksBoard.cpp.o
+.PHONY : Classes/game/BricksBoard.o
+
+# target to build an object file
+Classes/game/BricksBoard.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o
+.PHONY : Classes/game/BricksBoard.cpp.o
+
+Classes/game/BricksBoard.i: Classes/game/BricksBoard.cpp.i
+.PHONY : Classes/game/BricksBoard.i
+
+# target to preprocess a source file
+Classes/game/BricksBoard.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.i
+.PHONY : Classes/game/BricksBoard.cpp.i
+
+Classes/game/BricksBoard.s: Classes/game/BricksBoard.cpp.s
+.PHONY : Classes/game/BricksBoard.s
+
+# target to generate assembly for a file
+Classes/game/BricksBoard.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.s
+.PHONY : Classes/game/BricksBoard.cpp.s
 
 Classes/game/Paddle.o: Classes/game/Paddle.cpp.o
 .PHONY : Classes/game/Paddle.o
@@ -371,9 +395,12 @@ help:
 	@echo "... Classes/game/Ball.o"
 	@echo "... Classes/game/Ball.i"
 	@echo "... Classes/game/Ball.s"
-	@echo "... Classes/game/Bricks.o"
-	@echo "... Classes/game/Bricks.i"
-	@echo "... Classes/game/Bricks.s"
+	@echo "... Classes/game/Brick.o"
+	@echo "... Classes/game/Brick.i"
+	@echo "... Classes/game/Brick.s"
+	@echo "... Classes/game/BricksBoard.o"
+	@echo "... Classes/game/BricksBoard.i"
+	@echo "... Classes/game/BricksBoard.s"
 	@echo "... Classes/game/Paddle.o"
 	@echo "... Classes/game/Paddle.i"
 	@echo "... Classes/game/Paddle.s"

@@ -23,7 +23,7 @@ void LevelScene::onMouseMove(Event* event) {
   std::string str = "MousePosition X:";
   str = str + std::to_string(e->getCursorX()) + " Y:" + std::to_string(e->getCursorY());
 
-  this->paddle->setPosition(Vec2(e->getCursorX(), 100));
+  this->paddle->setPosition(e->getCursorX());
 
   cocos2d::log(str.c_str());
 }
@@ -53,11 +53,11 @@ void LevelScene::createWorldBounds(float worldWidth, float worldHeight) {
 
 void LevelScene::createBricks() {
   
-  this->bricks = std::unique_ptr<arkanoid::Bricks> (new arkanoid::Bricks());
-  this->bricks->createBoard(4, 4);
+  this->bricksBoard = std::unique_ptr<arkanoid::BricksBoard> (new arkanoid::BricksBoard());
+  this->bricksBoard->createBoard(4, 4);
   
-  for (auto sprite : (*this->bricks->getSprites())) {
-    this->addChild(sprite);
+  for (auto brick : * this->bricksBoard->getBricks()) {
+    this->addChild(brick->getSprite());
   }
   
 }
@@ -72,8 +72,8 @@ bool LevelScene::init() {
     return false;
   }
 
-  this->paddle = 
-  this->addChild(this->paddle);
+  this->paddle = std::unique_ptr<arkanoid::Paddle> (new arkanoid::Paddle());
+  this->addChild(this->paddle->getSprite());
 
   this->ball = std::unique_ptr<arkanoid::Ball> (new arkanoid::Ball());
   

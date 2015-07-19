@@ -117,7 +117,8 @@ set(GAME_SRC
   Classes/AppDelegate.cpp
   Classes/game/Paddle.cpp
   Classes/game/Ball.cpp
-  Classes/game/Bricks.cpp
+  Classes/game/Brick.cpp
+  Classes/game/BricksBoard.cpp
   Classes/scenes/LevelScene.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
@@ -126,7 +127,8 @@ set(GAME_HEADERS
   Classes/AppDelegate.h
   Classes/game/Paddle.h
   Classes/game/Ball.h
-  Classes/game/Bricks.h
+  Classes/game/Brick.h
+  Classes/game/BricksBoard.h
   Classes/scenes/LevelScene.h
   ${PLATFORM_SPECIFIC_HEADERS}
 )

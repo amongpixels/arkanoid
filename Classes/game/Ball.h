@@ -9,6 +9,7 @@
 #define	BALL_H
 
 #include "cocos2d.h"
+#include "CollisionMasks.h"
 
 namespace arkanoid {
   

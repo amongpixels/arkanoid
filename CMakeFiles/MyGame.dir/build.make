@@ -121,32 +121,55 @@ CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o.provides: CMakeFiles/MyGame.dir/Cl
 
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o
 
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o: CMakeFiles/MyGame.dir/flags.make
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o: Classes/game/Bricks.cpp
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o: Classes/game/Brick.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp
 
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp > CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.i
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp > CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.i
 
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dragomir/git/arkanoid_default/Classes/game/Bricks.cpp -o CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.s
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dragomir/git/arkanoid_default/Classes/game/Brick.cpp -o CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.s
 
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.requires:
-.PHONY : CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.requires
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.requires
 
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.provides.build
-.PHONY : CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.provides
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.provides
 
-CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o
+CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o
+
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o: Classes/game/BricksBoard.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp
+
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp > CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp -o CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o
 
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: Classes/scenes/LevelScene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp
 
@@ -169,7 +192,7 @@ CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: proj.linux/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/proj.linux/main.cpp.o -c /home/dragomir/git/arkanoid_default/proj.linux/main.cpp
 
@@ -195,7 +218,8 @@ MyGame_OBJECTS = \
 "CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o" \
 "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
 
@@ -205,7 +229,8 @@ MyGame_EXTERNAL_OBJECTS =
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o
-bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
@@ -244,7 +269,8 @@ CMakeFiles/MyGame.dir/build: bin/MyGame
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o.requires
-CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Bricks.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
 .PHONY : CMakeFiles/MyGame.dir/requires
