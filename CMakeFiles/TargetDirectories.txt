@@ -1,0 +1,8 @@
+/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir
+/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame_CORE_PRE_BUILD.dir
+/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame_PRE_BUILD.dir
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/CMakeFiles/cocos2d.dir
+/home/dragomir/git/arkanoid_default/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir
+/home/dragomir/git/arkanoid_default/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir
+/home/dragomir/git/arkanoid_default/cocos2d/external/unzip/CMakeFiles/unzip.dir
+/home/dragomir/git/arkanoid_default/cocos2d/external/xxhash/CMakeFiles/xxhash.dir

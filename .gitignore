@@ -1,0 +1,5 @@
+bin
+proj.*
+cocos2d
+lib
+linux-build

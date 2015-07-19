@@ -1,0 +1,4555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="Classes">
+        <df name="game">
+          <in>Ball.cpp</in>
+          <in>Ball.h</in>
+          <in>Bricks.cpp</in>
+          <in>Bricks.h</in>
+          <in>Paddle.cpp</in>
+          <in>Paddle.h</in>
+        </df>
+        <df name="scenes">
+          <in>LevelScene.cpp</in>
+        </df>
+        <in>AppDelegate.cpp</in>
+      </df>
+      <df name="cocos2d">
+        <df name="cocos">
+          <df name="2d">
+            <in>CCAction.cpp</in>
+            <in>CCActionCamera.cpp</in>
+            <in>CCActionCatmullRom.cpp</in>
+            <in>CCActionEase.cpp</in>
+            <in>CCActionGrid.cpp</in>
+            <in>CCActionGrid3D.cpp</in>
+            <in>CCActionInstant.cpp</in>
+            <in>CCActionInterval.cpp</in>
+            <in>CCActionManager.cpp</in>
+            <in>CCActionPageTurn3D.cpp</in>
+            <in>CCActionProgressTimer.cpp</in>
+            <in>CCActionTiledGrid.cpp</in>
+            <in>CCActionTween.cpp</in>
+            <in>CCAnimation.cpp</in>
+            <in>CCAnimationCache.cpp</in>
+            <in>CCAtlasNode.cpp</in>
+            <in>CCCamera.cpp</in>
+            <in>CCClippingNode.cpp</in>
+            <in>CCClippingRectangleNode.cpp</in>
+            <in>CCComponent.cpp</in>
+            <in>CCComponentContainer.cpp</in>
+            <in>CCDrawNode.cpp</in>
+            <in>CCDrawingPrimitives.cpp</in>
+            <in>CCFastTMXLayer.cpp</in>
+            <in>CCFastTMXTiledMap.cpp</in>
+            <in>CCFont.cpp</in>
+            <in>CCFontAtlas.cpp</in>
+            <in>CCFontAtlasCache.cpp</in>
+            <in>CCFontCharMap.cpp</in>
+            <in>CCFontFNT.cpp</in>
+            <in>CCFontFreeType.cpp</in>
+            <in>CCGLBufferedNode.cpp</in>
+            <in>CCGrabber.cpp</in>
+            <in>CCGrid.cpp</in>
+            <in>CCLabel.cpp</in>
+            <in>CCLabelAtlas.cpp</in>
+            <in>CCLabelBMFont.cpp</in>
+            <in>CCLabelTTF.cpp</in>
+            <in>CCLabelTextFormatter.cpp</in>
+            <in>CCLayer.cpp</in>
+            <in>CCLight.cpp</in>
+            <in>CCMenu.cpp</in>
+            <in>CCMenuItem.cpp</in>
+            <in>CCMotionStreak.cpp</in>
+            <in>CCNode.cpp</in>
+            <in>CCNodeGrid.cpp</in>
+            <in>CCParallaxNode.cpp</in>
+            <in>CCParticleBatchNode.cpp</in>
+            <in>CCParticleExamples.cpp</in>
+            <in>CCParticleSystem.cpp</in>
+            <in>CCParticleSystemQuad.cpp</in>
+            <in>CCProgressTimer.cpp</in>
+            <in>CCProtectedNode.cpp</in>
+            <in>CCRenderTexture.cpp</in>
+            <in>CCScene.cpp</in>
+            <in>CCSprite.cpp</in>
+            <in>CCSpriteBatchNode.cpp</in>
+            <in>CCSpriteFrame.cpp</in>
+            <in>CCSpriteFrameCache.cpp</in>
+            <in>CCTMXLayer.cpp</in>
+            <in>CCTMXObjectGroup.cpp</in>
+            <in>CCTMXTiledMap.cpp</in>
+            <in>CCTMXXMLParser.cpp</in>
+            <in>CCTextFieldTTF.cpp</in>
+            <in>CCTileMapAtlas.cpp</in>
+            <in>CCTransition.cpp</in>
+            <in>CCTransitionPageTurn.cpp</in>
+            <in>CCTransitionProgress.cpp</in>
+            <in>CCTweenFunction.cpp</in>
+            <in>MarchingSquare.cpp</in>
+            <in>SpritePolygon.cpp</in>
+            <in>SpritePolygonCache.cpp</in>
+          </df>
+          <df name="3d">
+            <in>CCAABB.cpp</in>
+            <in>CCAnimate3D.cpp</in>
+            <in>CCAnimation3D.cpp</in>
+            <in>CCAttachNode.cpp</in>
+            <in>CCBillBoard.cpp</in>
+            <in>CCBundle3D.cpp</in>
+            <in>CCBundleReader.cpp</in>
+            <in>CCFrustum.cpp</in>
+            <in>CCMesh.cpp</in>
+            <in>CCMeshSkin.cpp</in>
+            <in>CCMeshVertexIndexData.cpp</in>
+            <in>CCOBB.cpp</in>
+            <in>CCObjLoader.cpp</in>
+            <in>CCPlane.cpp</in>
+            <in>CCRay.cpp</in>
+            <in>CCSkeleton3D.cpp</in>
+            <in>CCSkybox.cpp</in>
+            <in>CCSprite3D.cpp</in>
+            <in>CCSprite3DMaterial.cpp</in>
+            <in>CCTerrain.cpp</in>
+            <in>CCTextureCube.cpp</in>
+          </df>
+          <df name="audio">
+            <df name="linux">
+              <in>FmodAudioPlayer.cpp</in>
+              <in>SimpleAudioEngineFMOD.cpp</in>
+            </df>
+            <in>AudioEngine.cpp</in>
+          </df>
+          <df name="base">
+            <df name="allocator">
+              <in>CCAllocatorDiagnostics.cpp</in>
+              <in>CCAllocatorGlobal.cpp</in>
+              <in>CCAllocatorGlobalNewDelete.cpp</in>
+            </df>
+            <in>CCAsyncTaskPool.cpp</in>
+            <in>CCAutoreleasePool.cpp</in>
+            <in>CCConfiguration.cpp</in>
+            <in>CCConsole.cpp</in>
+            <in>CCController.cpp</in>
+            <in>CCData.cpp</in>
+            <in>CCDataVisitor.cpp</in>
+            <in>CCDirector.cpp</in>
+            <in>CCEvent.cpp</in>
+            <in>CCEventAcceleration.cpp</in>
+            <in>CCEventController.cpp</in>
+            <in>CCEventCustom.cpp</in>
+            <in>CCEventDispatcher.cpp</in>
+            <in>CCEventFocus.cpp</in>
+            <in>CCEventKeyboard.cpp</in>
+            <in>CCEventListener.cpp</in>
+            <in>CCEventListenerAcceleration.cpp</in>
+            <in>CCEventListenerController.cpp</in>
+            <in>CCEventListenerCustom.cpp</in>
+            <in>CCEventListenerFocus.cpp</in>
+            <in>CCEventListenerKeyboard.cpp</in>
+            <in>CCEventListenerMouse.cpp</in>
+            <in>CCEventListenerTouch.cpp</in>
+            <in>CCEventMouse.cpp</in>
+            <in>CCEventTouch.cpp</in>
+            <in>CCIMEDispatcher.cpp</in>
+            <in>CCNS.cpp</in>
+            <in>CCProfiling.cpp</in>
+            <in>CCRef.cpp</in>
+            <in>CCScheduler.cpp</in>
+            <in>CCScriptSupport.cpp</in>
+            <in>CCTouch.cpp</in>
+            <in>CCUserDefault.cpp</in>
+            <in>CCValue.cpp</in>
+            <in>ObjectFactory.cpp</in>
+            <in>TGAlib.cpp</in>
+            <in>ZipUtils.cpp</in>
+            <in>atitc.cpp</in>
+            <in>base64.cpp</in>
+            <in>ccCArray.cpp</in>
+            <in>ccFPSImages.c</in>
+            <in>ccRandom.cpp</in>
+            <in>ccTypes.cpp</in>
+            <in>ccUTF8.cpp</in>
+            <in>ccUtils.cpp</in>
+            <in>etc1.cpp</in>
+            <in>pvr.cpp</in>
+            <in>s3tc.cpp</in>
+          </df>
+          <df name="deprecated">
+            <in>CCArray.cpp</in>
+            <in>CCDeprecated.cpp</in>
+            <in>CCDictionary.cpp</in>
+            <in>CCNotificationCenter.cpp</in>
+            <in>CCSet.cpp</in>
+            <in>CCString.cpp</in>
+          </df>
+          <df name="editor-support">
+            <df name="cocosbuilder">
+              <in>CCBAnimationManager.cpp</in>
+              <in>CCBFileLoader.cpp</in>
+              <in>CCBKeyframe.cpp</in>
+              <in>CCBReader.cpp</in>
+              <in>CCBSequence.cpp</in>
+              <in>CCBSequenceProperty.cpp</in>
+              <in>CCControlButtonLoader.cpp</in>
+              <in>CCControlLoader.cpp</in>
+              <in>CCLabelBMFontLoader.cpp</in>
+              <in>CCLabelTTFLoader.cpp</in>
+              <in>CCLayerColorLoader.cpp</in>
+              <in>CCLayerGradientLoader.cpp</in>
+              <in>CCLayerLoader.cpp</in>
+              <in>CCMenuItemImageLoader.cpp</in>
+              <in>CCMenuItemLoader.cpp</in>
+              <in>CCNode+CCBRelativePositioning.cpp</in>
+              <in>CCNodeLoader.cpp</in>
+              <in>CCNodeLoaderLibrary.cpp</in>
+              <in>CCParticleSystemQuadLoader.cpp</in>
+              <in>CCScale9SpriteLoader.cpp</in>
+              <in>CCScrollViewLoader.cpp</in>
+              <in>CCSpriteLoader.cpp</in>
+            </df>
+            <df name="cocostudio">
+              <df name="ActionTimeline">
+                <in>CCActionTimeline.cpp</in>
+                <in>CCActionTimelineCache.cpp</in>
+                <in>CCActionTimelineNode.cpp</in>
+                <in>CCFrame.cpp</in>
+                <in>CCTimeLine.cpp</in>
+                <in>CSLoader.cpp</in>
+              </df>
+              <df name="WidgetReader">
+                <df name="ArmatureNodeReader">
+                  <in>ArmatureNodeReader.cpp</in>
+                </df>
+                <df name="ButtonReader">
+                  <in>ButtonReader.cpp</in>
+                </df>
+                <df name="CheckBoxReader">
+                  <in>CheckBoxReader.cpp</in>
+                </df>
+                <df name="ComAudioReader">
+                  <in>ComAudioReader.cpp</in>
+                </df>
+                <df name="GameMapReader">
+                  <in>GameMapReader.cpp</in>
+                </df>
+                <df name="ImageViewReader">
+                  <in>ImageViewReader.cpp</in>
+                </df>
+                <df name="LayoutReader">
+                  <in>LayoutReader.cpp</in>
+                </df>
+                <df name="ListViewReader">
+                  <in>ListViewReader.cpp</in>
+                </df>
+                <df name="LoadingBarReader">
+                  <in>LoadingBarReader.cpp</in>
+                </df>
+                <df name="Node3DReader">
+                  <in>Node3DReader.cpp</in>
+                </df>
+                <df name="NodeReader">
+                  <in>NodeReader.cpp</in>
+                </df>
+                <df name="PageViewReader">
+                  <in>PageViewReader.cpp</in>
+                </df>
+                <df name="Particle3DReader">
+                  <in>Particle3DReader.cpp</in>
+                </df>
+                <df name="ParticleReader">
+                  <in>ParticleReader.cpp</in>
+                </df>
+                <df name="ProjectNodeReader">
+                  <in>ProjectNodeReader.cpp</in>
+                </df>
+                <df name="ScrollViewReader">
+                  <in>ScrollViewReader.cpp</in>
+                </df>
+                <df name="SingleNodeReader">
+                  <in>SingleNodeReader.cpp</in>
+                </df>
+                <df name="SliderReader">
+                  <in>SliderReader.cpp</in>
+                </df>
+                <df name="Sprite3DReader">
+                  <in>Sprite3DReader.cpp</in>
+                </df>
+                <df name="SpriteReader">
+                  <in>SpriteReader.cpp</in>
+                </df>
+                <df name="TextAtlasReader">
+                  <in>TextAtlasReader.cpp</in>
+                </df>
+                <df name="TextBMFontReader">
+                  <in>TextBMFontReader.cpp</in>
+                </df>
+                <df name="TextFieldReader">
+                  <in>TextFieldReader.cpp</in>
+                </df>
+                <df name="TextReader">
+                  <in>TextReader.cpp</in>
+                </df>
+                <df name="UserCameraReader">
+                  <in>UserCameraReader.cpp</in>
+                </df>
+                <in>WidgetReader.cpp</in>
+              </df>
+              <in>CCActionFrame.cpp</in>
+              <in>CCActionFrameEasing.cpp</in>
+              <in>CCActionManagerEx.cpp</in>
+              <in>CCActionNode.cpp</in>
+              <in>CCActionObject.cpp</in>
+              <in>CCArmature.cpp</in>
+              <in>CCArmatureAnimation.cpp</in>
+              <in>CCArmatureDataManager.cpp</in>
+              <in>CCArmatureDefine.cpp</in>
+              <in>CCBatchNode.cpp</in>
+              <in>CCBone.cpp</in>
+              <in>CCColliderDetector.cpp</in>
+              <in>CCComAttribute.cpp</in>
+              <in>CCComAudio.cpp</in>
+              <in>CCComController.cpp</in>
+              <in>CCComRender.cpp</in>
+              <in>CCDataReaderHelper.cpp</in>
+              <in>CCDatas.cpp</in>
+              <in>CCDecorativeDisplay.cpp</in>
+              <in>CCDisplayFactory.cpp</in>
+              <in>CCDisplayManager.cpp</in>
+              <in>CCInputDelegate.cpp</in>
+              <in>CCObjectExtensionData.cpp</in>
+              <in>CCProcessBase.cpp</in>
+              <in>CCSGUIReader.cpp</in>
+              <in>CCSSceneReader.cpp</in>
+              <in>CCSkin.cpp</in>
+              <in>CCSpriteFrameCacheHelper.cpp</in>
+              <in>CCTransformHelp.cpp</in>
+              <in>CCTween.cpp</in>
+              <in>CCUtilMath.cpp</in>
+              <in>CocoLoader.cpp</in>
+              <in>CocoStudio.cpp</in>
+              <in>DictionaryHelper.cpp</in>
+              <in>FlatBuffersSerialize.cpp</in>
+              <in>TriggerBase.cpp</in>
+              <in>TriggerMng.cpp</in>
+              <in>TriggerObj.cpp</in>
+            </df>
+            <df name="spine">
+              <in>Animation.c</in>
+              <in>AnimationState.c</in>
+              <in>AnimationStateData.c</in>
+              <in>Atlas.c</in>
+              <in>AtlasAttachmentLoader.c</in>
+              <in>Attachment.c</in>
+              <in>AttachmentLoader.c</in>
+              <in>Bone.c</in>
+              <in>BoneData.c</in>
+              <in>BoundingBoxAttachment.c</in>
+              <in>Event.c</in>
+              <in>EventData.c</in>
+              <in>IkConstraint.c</in>
+              <in>IkConstraintData.c</in>
+              <in>Json.c</in>
+              <in>MeshAttachment.c</in>
+              <in>PolygonBatch.cpp</in>
+              <in>RegionAttachment.c</in>
+              <in>Skeleton.c</in>
+              <in>SkeletonAnimation.cpp</in>
+              <in>SkeletonBounds.c</in>
+              <in>SkeletonData.c</in>
+              <in>SkeletonJson.c</in>
+              <in>SkeletonRenderer.cpp</in>
+              <in>Skin.c</in>
+              <in>SkinnedMeshAttachment.c</in>
+              <in>Slot.c</in>
+              <in>SlotData.c</in>
+              <in>extension.c</in>
+              <in>spine-cocos2dx.cpp</in>
+            </df>
+          </df>
+          <df name="math">
+            <in>CCAffineTransform.cpp</in>
+            <in>CCGeometry.cpp</in>
+            <in>CCVertex.cpp</in>
+            <in>Mat4.cpp</in>
+            <in>MathUtil.cpp</in>
+            <in>Quaternion.cpp</in>
+            <in>TransformUtils.cpp</in>
+            <in>Vec2.cpp</in>
+            <in>Vec3.cpp</in>
+            <in>Vec4.cpp</in>
+          </df>
+          <df name="network">
+            <in>HttpClient.cpp</in>
+            <in>SocketIO.cpp</in>
+            <in>WebSocket.cpp</in>
+          </df>
+          <df name="physics">
+            <in>CCPhysicsBody.cpp</in>
+            <in>CCPhysicsContact.cpp</in>
+            <in>CCPhysicsJoint.cpp</in>
+            <in>CCPhysicsShape.cpp</in>
+            <in>CCPhysicsWorld.cpp</in>
+          </df>
+          <df name="platform">
+            <df name="desktop">
+              <in>CCGLViewImpl-desktop.cpp</in>
+            </df>
+            <df name="linux">
+              <in>CCApplication-linux.cpp</in>
+              <in>CCCommon-linux.cpp</in>
+              <in>CCDevice-linux.cpp</in>
+              <in>CCFileUtils-linux.cpp</in>
+              <in>CCStdC-linux.cpp</in>
+            </df>
+            <in>CCFileUtils.cpp</in>
+            <in>CCGLView.cpp</in>
+            <in>CCImage.cpp</in>
+            <in>CCSAXParser.cpp</in>
+            <in>CCThread.cpp</in>
+          </df>
+          <df name="renderer">
+            <in>CCBatchCommand.cpp</in>
+            <in>CCCustomCommand.cpp</in>
+            <in>CCGLProgram.cpp</in>
+            <in>CCGLProgramCache.cpp</in>
+            <in>CCGLProgramState.cpp</in>
+            <in>CCGLProgramStateCache.cpp</in>
+            <in>CCGroupCommand.cpp</in>
+            <in>CCMeshCommand.cpp</in>
+            <in>CCPrimitive.cpp</in>
+            <in>CCPrimitiveCommand.cpp</in>
+            <in>CCQuadCommand.cpp</in>
+            <in>CCRenderCommand.cpp</in>
+            <in>CCRenderer.cpp</in>
+            <in>CCTexture2D.cpp</in>
+            <in>CCTextureAtlas.cpp</in>
+            <in>CCTextureCache.cpp</in>
+            <in>CCTrianglesCommand.cpp</in>
+            <in>CCVertexIndexBuffer.cpp</in>
+            <in>CCVertexIndexData.cpp</in>
+            <in>ccGLStateCache.cpp</in>
+            <in>ccShaders.cpp</in>
+          </df>
+          <df name="ui">
+            <df name="UIEditBox">
+              <in>UIEditBox.cpp</in>
+              <in>UIEditBoxImpl-stub.cpp</in>
+            </df>
+            <in>CocosGUI.cpp</in>
+            <in>UIButton.cpp</in>
+            <in>UICheckBox.cpp</in>
+            <in>UIDeprecated.cpp</in>
+            <in>UIHBox.cpp</in>
+            <in>UIHelper.cpp</in>
+            <in>UIImageView.cpp</in>
+            <in>UILayout.cpp</in>
+            <in>UILayoutComponent.cpp</in>
+            <in>UILayoutManager.cpp</in>
+            <in>UILayoutParameter.cpp</in>
+            <in>UIListView.cpp</in>
+            <in>UILoadingBar.cpp</in>
+            <in>UIPageView.cpp</in>
+            <in>UIRelativeBox.cpp</in>
+            <in>UIRichText.cpp</in>
+            <in>UIScale9Sprite.cpp</in>
+            <in>UIScrollView.cpp</in>
+            <in>UISlider.cpp</in>
+            <in>UIText.cpp</in>
+            <in>UITextAtlas.cpp</in>
+            <in>UITextBMFont.cpp</in>
+            <in>UITextField.cpp</in>
+            <in>UIVBox.cpp</in>
+            <in>UIWebView.cpp</in>
+            <in>UIWidget.cpp</in>
+          </df>
+          <in>cocos2d.cpp</in>
+        </df>
+        <df name="extensions">
+          <df name="assets-manager">
+            <in>AssetsManager.cpp</in>
+            <in>AssetsManagerEx.cpp</in>
+            <in>CCEventAssetsManagerEx.cpp</in>
+            <in>CCEventListenerAssetsManagerEx.cpp</in>
+            <in>Downloader.cpp</in>
+            <in>Manifest.cpp</in>
+          </df>
+          <df name="GUI">
+            <df name="CCControlExtension">
+              <in>CCControl.cpp</in>
+              <in>CCControlButton.cpp</in>
+              <in>CCControlColourPicker.cpp</in>
+              <in>CCControlHuePicker.cpp</in>
+              <in>CCControlPotentiometer.cpp</in>
+              <in>CCControlSaturationBrightnessPicker.cpp</in>
+              <in>CCControlSlider.cpp</in>
+              <in>CCControlStepper.cpp</in>
+              <in>CCControlSwitch.cpp</in>
+              <in>CCControlUtils.cpp</in>
+              <in>CCInvocation.cpp</in>
+            </df>
+            <df name="CCScrollView">
+              <in>CCScrollView.cpp</in>
+              <in>CCTableView.cpp</in>
+              <in>CCTableViewCell.cpp</in>
+            </df>
+          </df>
+          <df name="Particle3D">
+            <df name="PU">
+              <in>CCPUAffector.cpp</in>
+              <in>CCPUAffectorManager.cpp</in>
+              <in>CCPUAffectorTranslator.cpp</in>
+              <in>CCPUAlignAffector.cpp</in>
+              <in>CCPUAlignAffectorTranslator.cpp</in>
+              <in>CCPUBaseCollider.cpp</in>
+              <in>CCPUBaseColliderTranslator.cpp</in>
+              <in>CCPUBaseForceAffector.cpp</in>
+              <in>CCPUBaseForceAffectorTranslator.cpp</in>
+              <in>CCPUBeamRender.cpp</in>
+              <in>CCPUBehaviour.cpp</in>
+              <in>CCPUBehaviourManager.cpp</in>
+              <in>CCPUBehaviourTranslator.cpp</in>
+              <in>CCPUBillboardChain.cpp</in>
+              <in>CCPUBoxCollider.cpp</in>
+              <in>CCPUBoxColliderTranslator.cpp</in>
+              <in>CCPUBoxEmitter.cpp</in>
+              <in>CCPUBoxEmitterTranslator.cpp</in>
+              <in>CCPUCircleEmitter.cpp</in>
+              <in>CCPUCircleEmitterTranslator.cpp</in>
+              <in>CCPUCollisionAvoidanceAffector.cpp</in>
+              <in>CCPUCollisionAvoidanceAffectorTranslator.cpp</in>
+              <in>CCPUColorAffector.cpp</in>
+              <in>CCPUColorAffectorTranslator.cpp</in>
+              <in>CCPUDoAffectorEventHandler.cpp</in>
+              <in>CCPUDoAffectorEventHandlerTranslator.cpp</in>
+              <in>CCPUDoEnableComponentEventHandler.cpp</in>
+              <in>CCPUDoEnableComponentEventHandlerTranslator.cpp</in>
+              <in>CCPUDoExpireEventHandler.cpp</in>
+              <in>CCPUDoExpireEventHandlerTranslator.cpp</in>
+              <in>CCPUDoFreezeEventHandler.cpp</in>
+              <in>CCPUDoFreezeEventHandlerTranslator.cpp</in>
+              <in>CCPUDoPlacementParticleEventHandler.cpp</in>
+              <in>CCPUDoPlacementParticleEventHandlerTranslator.cpp</in>
+              <in>CCPUDoScaleEventHandler.cpp</in>
+              <in>CCPUDoScaleEventHandlerTranslator.cpp</in>
+              <in>CCPUDoStopSystemEventHandler.cpp</in>
+              <in>CCPUDoStopSystemEventHandlerTranslator.cpp</in>
+              <in>CCPUDynamicAttribute.cpp</in>
+              <in>CCPUDynamicAttributeTranslator.cpp</in>
+              <in>CCPUEmitter.cpp</in>
+              <in>CCPUEmitterManager.cpp</in>
+              <in>CCPUEmitterTranslator.cpp</in>
+              <in>CCPUEventHandler.cpp</in>
+              <in>CCPUEventHandlerManager.cpp</in>
+              <in>CCPUEventHandlerTranslator.cpp</in>
+              <in>CCPUFlockCenteringAffector.cpp</in>
+              <in>CCPUFlockCenteringAffectorTranslator.cpp</in>
+              <in>CCPUForceField.cpp</in>
+              <in>CCPUForceFieldAffector.cpp</in>
+              <in>CCPUForceFieldAffectorTranslator.cpp</in>
+              <in>CCPUGeometryRotator.cpp</in>
+              <in>CCPUGeometryRotatorTranslator.cpp</in>
+              <in>CCPUGravityAffector.cpp</in>
+              <in>CCPUGravityAffectorTranslator.cpp</in>
+              <in>CCPUInterParticleCollider.cpp</in>
+              <in>CCPUInterParticleColliderTranslator.cpp</in>
+              <in>CCPUJetAffector.cpp</in>
+              <in>CCPUJetAffectorTranslator.cpp</in>
+              <in>CCPULineAffector.cpp</in>
+              <in>CCPULineAffectorTranslator.cpp</in>
+              <in>CCPULineEmitter.cpp</in>
+              <in>CCPULineEmitterTranslator.cpp</in>
+              <in>CCPULinearForceAffector.cpp</in>
+              <in>CCPULinearForceAffectorTranslator.cpp</in>
+              <in>CCPUListener.cpp</in>
+              <in>CCPUMaterialManager.cpp</in>
+              <in>CCPUMaterialTranslator.cpp</in>
+              <in>CCPUMeshSurfaceEmitter.cpp</in>
+              <in>CCPUMeshSurfaceEmitterTranslator.cpp</in>
+              <in>CCPUNoise.cpp</in>
+              <in>CCPUObserver.cpp</in>
+              <in>CCPUObserverManager.cpp</in>
+              <in>CCPUObserverTranslator.cpp</in>
+              <in>CCPUOnClearObserver.cpp</in>
+              <in>CCPUOnClearObserverTranslator.cpp</in>
+              <in>CCPUOnCollisionObserver.cpp</in>
+              <in>CCPUOnCollisionObserverTranslator.cpp</in>
+              <in>CCPUOnCountObserver.cpp</in>
+              <in>CCPUOnCountObserverTranslator.cpp</in>
+              <in>CCPUOnEmissionObserver.cpp</in>
+              <in>CCPUOnEmissionObserverTranslator.cpp</in>
+              <in>CCPUOnEventFlagObserver.cpp</in>
+              <in>CCPUOnEventFlagObserverTranslator.cpp</in>
+              <in>CCPUOnExpireObserver.cpp</in>
+              <in>CCPUOnExpireObserverTranslator.cpp</in>
+              <in>CCPUOnPositionObserver.cpp</in>
+              <in>CCPUOnPositionObserverTranslator.cpp</in>
+              <in>CCPUOnQuotaObserver.cpp</in>
+              <in>CCPUOnQuotaObserverTranslator.cpp</in>
+              <in>CCPUOnRandomObserver.cpp</in>
+              <in>CCPUOnRandomObserverTranslator.cpp</in>
+              <in>CCPUOnTimeObserver.cpp</in>
+              <in>CCPUOnTimeObserverTranslator.cpp</in>
+              <in>CCPUOnVelocityObserver.cpp</in>
+              <in>CCPUOnVelocityObserverTranslator.cpp</in>
+              <in>CCPUParticleFollower.cpp</in>
+              <in>CCPUParticleFollowerTranslator.cpp</in>
+              <in>CCPUParticleSystem3D.cpp</in>
+              <in>CCPUParticleSystem3DTranslator.cpp</in>
+              <in>CCPUPathFollower.cpp</in>
+              <in>CCPUPathFollowerTranslator.cpp</in>
+              <in>CCPUPlane.cpp</in>
+              <in>CCPUPlaneCollider.cpp</in>
+              <in>CCPUPlaneColliderTranslator.cpp</in>
+              <in>CCPUPointEmitter.cpp</in>
+              <in>CCPUPointEmitterTranslator.cpp</in>
+              <in>CCPUPositionEmitter.cpp</in>
+              <in>CCPUPositionEmitterTranslator.cpp</in>
+              <in>CCPURandomiser.cpp</in>
+              <in>CCPURandomiserTranslator.cpp</in>
+              <in>CCPURender.cpp</in>
+              <in>CCPURendererTranslator.cpp</in>
+              <in>CCPURibbonTrail.cpp</in>
+              <in>CCPURibbonTrailRender.cpp</in>
+              <in>CCPUScaleAffector.cpp</in>
+              <in>CCPUScaleAffectorTranslator.cpp</in>
+              <in>CCPUScaleVelocityAffector.cpp</in>
+              <in>CCPUScaleVelocityAffectorTranslator.cpp</in>
+              <in>CCPUScriptCompiler.cpp</in>
+              <in>CCPUScriptLexer.cpp</in>
+              <in>CCPUScriptParser.cpp</in>
+              <in>CCPUScriptTranslator.cpp</in>
+              <in>CCPUSimpleSpline.cpp</in>
+              <in>CCPUSineForceAffector.cpp</in>
+              <in>CCPUSineForceAffectorTranslator.cpp</in>
+              <in>CCPUSlaveBehaviour.cpp</in>
+              <in>CCPUSlaveBehaviourTranslator.cpp</in>
+              <in>CCPUSlaveEmitter.cpp</in>
+              <in>CCPUSlaveEmitterTranslator.cpp</in>
+              <in>CCPUSphere.cpp</in>
+              <in>CCPUSphereCollider.cpp</in>
+              <in>CCPUSphereColliderTranslator.cpp</in>
+              <in>CCPUSphereSurfaceEmitter.cpp</in>
+              <in>CCPUSphereSurfaceEmitterTranslator.cpp</in>
+              <in>CCPUTechniqueTranslator.cpp</in>
+              <in>CCPUTextureAnimator.cpp</in>
+              <in>CCPUTextureAnimatorTranslator.cpp</in>
+              <in>CCPUTextureRotator.cpp</in>
+              <in>CCPUTextureRotatorTranslator.cpp</in>
+              <in>CCPUTranslateManager.cpp</in>
+              <in>CCPUUtil.cpp</in>
+              <in>CCPUVelocityMatchingAffector.cpp</in>
+              <in>CCPUVelocityMatchingAffectorTranslator.cpp</in>
+              <in>CCPUVertexEmitter.cpp</in>
+              <in>CCPUVortexAffector.cpp</in>
+              <in>CCPUVortexAffectorTranslator.cpp</in>
+            </df>
+            <in>CCParticle3DAffector.cpp</in>
+            <in>CCParticle3DEmitter.cpp</in>
+            <in>CCParticle3DRender.cpp</in>
+            <in>CCParticleSystem3D.cpp</in>
+          </df>
+          <df name="physics-nodes">
+            <in>CCPhysicsDebugNode.cpp</in>
+            <in>CCPhysicsSprite.cpp</in>
+          </df>
+        </df>
+        <df name="external">
+          <df name="ConvertUTF">
+            <in>ConvertUTF.c</in>
+            <in>ConvertUTFWrapper.cpp</in>
+          </df>
+          <df name="edtaa3func">
+            <in>edtaa3func.cpp</in>
+          </df>
+          <df name="flatbuffers">
+            <in>flatc.cpp</in>
+            <in>idl_gen_cpp.cpp</in>
+            <in>idl_gen_fbs.cpp</in>
+            <in>idl_gen_general.cpp</in>
+            <in>idl_gen_go.cpp</in>
+            <in>idl_gen_text.cpp</in>
+            <in>idl_parser.cpp</in>
+          </df>
+          <df name="poly2tri">
+            <df name="common">
+              <in>shapes.cc</in>
+            </df>
+            <df name="sweep">
+              <in>advancing_front.cc</in>
+              <in>cdt.cc</in>
+              <in>sweep.cc</in>
+              <in>sweep_context.cc</in>
+            </df>
+          </df>
+          <df name="tinyxml2">
+            <in>tinyxml2.cpp</in>
+          </df>
+          <df name="unzip">
+            <in>ioapi.cpp</in>
+            <in>ioapi_mem.cpp</in>
+            <in>unzip.cpp</in>
+          </df>
+          <df name="xxhash">
+            <in>xxhash.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="proj.linux">
+        <in>main.cpp</in>
+      </df>
+      <in>.gitignore</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-fno-exceptions -std=c++11"/>
+        <element flagsID="1" commonFlags="-fno-exceptions -std=c99 -g"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>bin/MyGame</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>cocos2d/cocos</pElem>
+              <pElem>cocos2d</pElem>
+              <pElem>cocos2d/deprecated</pElem>
+              <pElem>cocos2d/cocos/platform</pElem>
+              <pElem>cocos2d/extensions</pElem>
+              <pElem>cocos2d/external</pElem>
+              <pElem>/usr/include/GLFW</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>CC_ENABLE_BOX2D_INTEGRATION=0</Elem>
+              <Elem>CC_ENABLE_CHIPMUNK_INTEGRATION=1</Elem>
+              <Elem>COCOS2D_DEBUG=1</Elem>
+              <Elem>LINUX</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <preprocessorList>
+              <Elem>COCOS2D_DEBUG=1</Elem>
+              <Elem>LINUX</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path=".gitignore" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/AppDelegate.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Classes/game/Ball.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/game/Ball.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/game/Bricks.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/game/Bricks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/game/Paddle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/game/Paddle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/scenes/LevelScene.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCAction.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionCamera.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionCatmullRom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionEase.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionGrid.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionGrid3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionInstant.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionInterval.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionPageTurn3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionProgressTimer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionTiledGrid.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionTween.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCAnimation.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCAnimationCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCAtlasNode.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCCamera.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCClippingNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCClippingRectangleNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCComponent.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCComponentContainer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCDrawNode.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCDrawingPrimitives.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFastTMXLayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFastTMXTiledMap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFont.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontAtlas.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontAtlasCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontCharMap.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontFNT.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontFreeType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCGLBufferedNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCGrabber.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCGrid.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabel.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelAtlas.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelBMFont.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelTTF.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelTextFormatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLayer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCLight.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCMenu.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCMenuItem.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCMotionStreak.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCNode.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCNodeGrid.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCParallaxNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleBatchNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleExamples.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleSystemQuad.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCProgressTimer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCProtectedNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCRenderTexture.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCScene.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCSprite.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCSpriteBatchNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCSpriteFrame.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCSpriteFrameCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXLayer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXObjectGroup.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXTiledMap.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXXMLParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTextFieldTTF.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTileMapAtlas.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTransition.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTransitionPageTurn.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTransitionProgress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/CCTweenFunction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/MarchingSquare.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/SpritePolygon.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/2d/SpritePolygonCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCAABB.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCAnimate3D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCAnimation3D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCAttachNode.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCBillBoard.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCBundle3D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCBundleReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCFrustum.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCMesh.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCMeshSkin.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCMeshVertexIndexData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCOBB.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCObjLoader.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCPlane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCRay.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCSkeleton3D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCSkybox.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCSprite3D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCSprite3DMaterial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCTerrain.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/3d/CCTextureCube.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/audio/AudioEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/audio/linux/FmodAudioPlayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/audio/linux/SimpleAudioEngineFMOD.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCAsyncTaskPool.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCAutoreleasePool.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCConfiguration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCConsole.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCData.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCDataVisitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCDirector.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEvent.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventAcceleration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventCustom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventFocus.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventKeyboard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerAcceleration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerCustom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerFocus.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerKeyboard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerMouse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerTouch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventMouse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCEventTouch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCIMEDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCNS.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCProfiling.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCRef.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCScheduler.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCScriptSupport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCTouch.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCUserDefault.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/CCValue.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ObjectFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/TGAlib.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ZipUtils.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/allocator/CCAllocatorDiagnostics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/allocator/CCAllocatorGlobal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/allocator/CCAllocatorGlobalNewDelete.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/atitc.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/base64.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ccCArray.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ccFPSImages.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/base/ccRandom.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ccTypes.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ccUTF8.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/ccUtils.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/etc1.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/pvr.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/base/s3tc.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/cocos2d.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCArray.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCDeprecated.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCDictionary.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCNotificationCenter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCSet.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBAnimationManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBFileLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBKeyframe.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBSequence.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBSequenceProperty.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCControlButtonLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCControlLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLabelBMFontLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLabelTTFLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLayerColorLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLayerGradientLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLayerLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCMenuItemImageLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCMenuItemLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCNode+CCBRelativePositioning.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoaderLibrary.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCParticleSystemQuadLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCScale9SpriteLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCScrollViewLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCSpriteLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimeline.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimelineNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CSLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionFrame.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionFrameEasing.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionObject.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmature.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmatureAnimation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmatureDataManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmatureDefine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCBatchNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCBone.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCColliderDetector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComAttribute.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComAudio.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComRender.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDatas.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDecorativeDisplay.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDisplayFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDisplayManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCInputDelegate.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCObjectExtensionData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCProcessBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSSceneReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSkin.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSpriteFrameCacheHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCTransformHelp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCTween.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCUtilMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CocoLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CocoStudio.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/DictionaryHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/TriggerBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/TriggerMng.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/TriggerObj.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ComAudioReader/ComAudioReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/Node3DReader/Node3DReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/NodeReader/NodeReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/Particle3DReader/Particle3DReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ParticleReader/ParticleReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ProjectNodeReader/ProjectNodeReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/SingleNodeReader/SingleNodeReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/Sprite3DReader/Sprite3DReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/SpriteReader/SpriteReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/UserCameraReader/UserCameraReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Animation.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AnimationState.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AnimationStateData.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Atlas.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AtlasAttachmentLoader.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Attachment.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AttachmentLoader.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Bone.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/BoneData.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/BoundingBoxAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Event.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/EventData.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/IkConstraint.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/IkConstraintData.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Json.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/MeshAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/PolygonBatch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/RegionAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Skeleton.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonAnimation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonBounds.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonData.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonJson.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Skin.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkinnedMeshAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Slot.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SlotData.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/extension.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/spine-cocos2dx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/CCAffineTransform.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/CCGeometry.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/CCVertex.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/Mat4.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/MathUtil.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/Quaternion.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/TransformUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/Vec2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/Vec3.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/math/Vec4.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/network/HttpClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/network/SocketIO.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/network/WebSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsBody.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsShape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsWorld.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/CCFileUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/CCGLView.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/CCImage.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/CCSAXParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/CCThread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCApplication-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCCommon-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCDevice-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCFileUtils-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCStdC-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCBatchCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCCustomCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgram.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgramCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgramState.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgramStateCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGroupCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCMeshCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCPrimitive.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCPrimitiveCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCQuadCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCRenderCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTexture2D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTextureAtlas.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTextureCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTrianglesCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCVertexIndexBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/CCVertexIndexData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/ccGLStateCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/renderer/ccShaders.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/CocosGUI.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIButton.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UICheckBox.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIDeprecated.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBox.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-stub.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIHBox.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIHelper.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIImageView.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UILayout.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UILayoutComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UILayoutManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UILayoutParameter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIListView.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UILoadingBar.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIPageView.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIRelativeBox.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIRichText.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIScale9Sprite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIScrollView.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UISlider.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIText.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UITextAtlas.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UITextBMFont.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UITextField.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIVBox.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIWebView.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/cocos/ui/UIWidget.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlButton.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlColourPicker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlPotentiometer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlSlider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlStepper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlSwitch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCInvocation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCScrollView/CCScrollView.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCScrollView/CCTableView.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/GUI/CCScrollView/CCTableViewCell.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/CCParticle3DAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/CCParticle3DEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/CCParticle3DRender.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUAlignAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUAlignAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBaseCollider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBaseColliderTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBaseForceAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBeamRender.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBehaviour.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBehaviourManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBehaviourTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBillboardChain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBoxCollider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBoxColliderTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBoxEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUBoxEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUCircleEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUCircleEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUColorAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUColorAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoAffectorEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoAffectorEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoEnableComponentEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoEnableComponentEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoExpireEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoExpireEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoFreezeEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoFreezeEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoPlacementParticleEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoPlacementParticleEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoScaleEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoScaleEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoStopSystemEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDoStopSystemEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUDynamicAttributeTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUEmitterManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUEventHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUEventHandlerManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUEventHandlerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUForceField.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUForceFieldAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUGeometryRotator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUGravityAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUGravityAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUInterParticleCollider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUJetAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUJetAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPULineAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPULineAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPULineEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPULineEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPULinearForceAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUListener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUMaterialManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUNoise.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUObserverManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnClearObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnClearObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnCollisionObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnCountObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnCountObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnEmissionObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnEventFlagObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnExpireObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnPositionObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnRandomObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnTimeObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnVelocityObserver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUParticleFollower.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUParticleFollowerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUParticleSystem3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPathFollower.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPathFollowerTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPlane.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPlaneCollider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPlaneColliderTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPointEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPointEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPositionEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUPositionEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPURandomiser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPURandomiserTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPURender.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPURendererTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPURibbonTrail.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPURibbonTrailRender.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScaleAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScaleAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScaleVelocityAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScriptCompiler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScriptParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUScriptTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSimpleSpline.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSineForceAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSlaveBehaviour.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSlaveBehaviourTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSlaveEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSphere.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSphereCollider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSphereColliderTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUTechniqueTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUTextureAnimator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUTextureRotator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUTextureRotatorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUTranslateManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUUtil.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUVelocityMatchingAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUVertexEmitter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUVortexAffector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/Particle3D/PU/CCPUVortexAffectorTranslator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/assets-manager/AssetsManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/assets-manager/AssetsManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/assets-manager/CCEventAssetsManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/assets-manager/CCEventListenerAssetsManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/assets-manager/Downloader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/assets-manager/Manifest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/physics-nodes/CCPhysicsDebugNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/extensions/physics-nodes/CCPhysicsSprite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/ConvertUTF/ConvertUTF.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="cocos2d/external/ConvertUTF/ConvertUTFWrapper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/edtaa3func/edtaa3func.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/flatc.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/idl_gen_cpp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/idl_gen_fbs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/idl_gen_general.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/idl_gen_go.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/idl_gen_text.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/flatbuffers/idl_parser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/poly2tri/common/shapes.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/poly2tri/sweep/advancing_front.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/poly2tri/sweep/cdt.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/poly2tri/sweep/sweep.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/poly2tri/sweep/sweep_context.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/tinyxml2/tinyxml2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/unzip/ioapi.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/unzip/ioapi_mem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/unzip/unzip.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cocos2d/external/xxhash/xxhash.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <folder path="0/Classes">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>/usr/include/GLFW</pElem>
+            <pElem>cocos2d/cocos</pElem>
+            <pElem>Classes</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d">
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/cocos</pElem>
+            <pElem>cocos2d</pElem>
+            <pElem>cocos2d/deprecated</pElem>
+            <pElem>cocos2d/cocos/platform</pElem>
+            <pElem>cocos2d/extensions</pElem>
+            <pElem>cocos2d/external</pElem>
+            <pElem>/usr/include/GLFW</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_ENABLE_BOX2D_INTEGRATION=0</Elem>
+            <Elem>CC_ENABLE_CHIPMUNK_INTEGRATION=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d/cocos">
+        <cTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d/extensions">
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d/external/ConvertUTF">
+        <cTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d/external/edtaa3func">
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d/external/flatbuffers">
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/external/flatbuffers</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/cocos2d/external/poly2tri">
+        <ccTool>
+          <incDir>
+            <pElem>cocos2d/external/ConvertUTF</pElem>
+            <pElem>cocos2d/external/poly2tri</pElem>
+            <pElem>cocos2d/external/poly2tri/common</pElem>
+            <pElem>cocos2d/external/poly2tri/sweep</pElem>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>extensions</pElem>
+            <pElem>cocos2d/external/xxtea</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>/usr/include/freetype2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CC_USE_WEBP=1</Elem>
+            <Elem>GLFW_DLL</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/proj.linux">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>/usr/include/GLFW</pElem>
+            <pElem>cocos2d/cocos</pElem>
+            <pElem>Classes</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="proj.linux/main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

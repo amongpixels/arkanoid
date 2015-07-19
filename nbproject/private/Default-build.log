@@ -1,0 +1,916 @@
+Scanning dependencies of target MyGame_CORE_PRE_BUILD
+[  0%] Built target MyGame_CORE_PRE_BUILD
+Scanning dependencies of target MyGame_PRE_BUILD
+MyGame_PRE_BUILD ...
+[  0%] Built target MyGame_PRE_BUILD
+Scanning dependencies of target tinyxml2
+[  0%] Building CXX object cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o
+Linking CXX static library ../../../lib/libtinyxml2.a
+[  0%] Built target tinyxml2
+Scanning dependencies of target xxhash
+[  1%] Building C object cocos2d/external/xxhash/CMakeFiles/xxhash.dir/xxhash.c.o
+Linking C static library ../../../lib/libxxhash.a
+[  1%] Built target xxhash
+Scanning dependencies of target unzip
+[  1%] Building CXX object cocos2d/external/unzip/CMakeFiles/unzip.dir/ioapi.cpp.o
+[  1%] Building CXX object cocos2d/external/unzip/CMakeFiles/unzip.dir/unzip.cpp.o
+[  1%] Building CXX object cocos2d/external/unzip/CMakeFiles/unzip.dir/ioapi_mem.cpp.o
+Linking CXX static library ../../../lib/libunzip.a
+[  1%] Built target unzip
+Scanning dependencies of target cocos2d
+[  1%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/cocos2d.cpp.o
+[  1%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionCamera.cpp.o
+[  2%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionCatmullRom.cpp.o
+[  2%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCAction.cpp.o
+[  2%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionEase.cpp.o
+[  2%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionGrid3D.cpp.o
+[  2%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionGrid.cpp.o
+[  3%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionInstant.cpp.o
+[  3%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionInterval.cpp.o
+[  3%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionManager.cpp.o
+[  3%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionPageTurn3D.cpp.o
+[  3%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionProgressTimer.cpp.o
+[  3%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionTiledGrid.cpp.o
+[  4%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCActionTween.cpp.o
+[  4%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCAnimationCache.cpp.o
+[  4%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCAnimation.cpp.o
+[  4%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCAtlasNode.cpp.o
+[  4%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCCamera.cpp.o
+[  5%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCClippingNode.cpp.o
+[  5%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCClippingRectangleNode.cpp.o
+[  5%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCComponentContainer.cpp.o
+[  5%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCComponent.cpp.o
+[  5%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCDrawingPrimitives.cpp.o
+[  5%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCDrawNode.cpp.o
+[  6%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFastTMXLayer.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXLayer.cpp: In member function ‘void cocos2d::experimental::TMXLayer::setFlaggedTileGIDByIndex(int, int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXLayer.cpp:685:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(gid == _tiles[index]) return;
+                           ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXLayer.cpp: In member function ‘void cocos2d::experimental::TMXLayer::setupTileSprite(cocos2d::Sprite*, cocos2d::Vec2, int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXLayer.cpp:841:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (flag == kTMXTileHorizontalFlag)
+                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXLayer.cpp:849:72: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         else if (flag == (kTMXTileVerticalFlag | kTMXTileHorizontalFlag) )
+                                                                        ^
+[  6%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFastTMXTiledMap.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXTiledMap.cpp: In member function ‘cocos2d::TMXTilesetInfo* cocos2d::experimental::TMXTiledMap::tilesetForLayer(cocos2d::TMXLayerInfo*, cocos2d::TMXMapInfo*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCFastTMXTiledMap.cpp:141:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                         if( (gid & kTMXFlippedMask) >= tilesetInfo->_firstGid )
+                                                                     ^
+[  6%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFontAtlasCache.cpp.o
+[  6%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFontAtlas.cpp.o
+[  6%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFontCharMap.cpp.o
+[  7%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFont.cpp.o
+[  7%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFontFNT.cpp.o
+[  7%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCFontFreeType.cpp.o
+[  7%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCGLBufferedNode.cpp.o
+[  7%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCGrabber.cpp.o
+[  7%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCGrid.cpp.o
+[  8%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLabelAtlas.cpp.o
+[  8%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLabelBMFont.cpp.o
+[  8%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLabel.cpp.o
+[  8%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLabelTextFormatter.cpp.o
+[  8%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLabelTTF.cpp.o
+[  9%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLayer.cpp.o
+[  9%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCLight.cpp.o
+[  9%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCMenu.cpp.o
+[  9%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCMenuItem.cpp.o
+[  9%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCMotionStreak.cpp.o
+[  9%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCNode.cpp.o
+[ 10%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCNodeGrid.cpp.o
+[ 10%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCParallaxNode.cpp.o
+[ 10%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCParticleBatchNode.cpp.o
+[ 10%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCParticleExamples.cpp.o
+[ 10%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCParticleSystem.cpp.o
+[ 11%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCParticleSystemQuad.cpp.o
+[ 11%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCProgressTimer.cpp.o
+[ 11%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCProtectedNode.cpp.o
+[ 11%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCRenderTexture.cpp.o
+[ 11%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCScene.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCScene.cpp: In member function ‘void cocos2d::Scene::render(cocos2d::Renderer*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCScene.cpp:132:13: warning: variable ‘defaultCamera’ set but not used [-Wunused-but-set-variable]
+     Camera* defaultCamera = nullptr;
+             ^
+[ 11%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCSpriteBatchNode.cpp.o
+[ 12%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCSprite.cpp.o
+[ 12%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCSpriteFrameCache.cpp.o
+[ 12%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCSpriteFrame.cpp.o
+[ 12%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/MarchingSquare.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/MarchingSquare.cpp: In member function ‘unsigned char cocos2d::MarchingSquare::getAlphaAt(int, int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/MarchingSquare.cpp:73:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(x < 0 || y < 0 || x > width-1 || y > height-1)
+                                    ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/MarchingSquare.cpp:73:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(x < 0 || y < 0 || x > width-1 || y > height-1)
+                                                    ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/MarchingSquare.cpp: In member function ‘std::vector<cocos2d::Vec2> cocos2d::MarchingSquare::rdp(std::vector<cocos2d::Vec2>)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/MarchingSquare.cpp:311:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 1; i < v.size()-1; i++)
+                                 ^
+[ 12%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/SpritePolygon.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/SpritePolygon.cpp: In member function ‘cocos2d::TrianglesCommand::Triangles cocos2d::experimental::SpritePolygon::triangulate(std::vector<cocos2d::Vec2>&)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/SpritePolygon.cpp:194:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(j = 0; j < _verts->size(); j++)
+                                         ^
+[ 13%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/SpritePolygonCache.cpp.o
+[ 13%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTextFieldTTF.cpp.o
+[ 13%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTileMapAtlas.cpp.o
+[ 13%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTMXLayer.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCTMXLayer.cpp: In member function ‘void cocos2d::TMXLayer::setupTileSprite(cocos2d::Sprite*, cocos2d::Vec2, int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCTMXLayer.cpp:247:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (flag == kTMXTileHorizontalFlag)
+                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCTMXLayer.cpp:255:72: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         else if (flag == (kTMXTileVerticalFlag | kTMXTileHorizontalFlag) )
+                                                                        ^
+[ 13%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTMXObjectGroup.cpp.o
+[ 13%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTMXTiledMap.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCTMXTiledMap.cpp: In member function ‘cocos2d::TMXTilesetInfo* cocos2d::TMXTiledMap::tilesetForLayer(cocos2d::TMXLayerInfo*, cocos2d::TMXMapInfo*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCTMXTiledMap.cpp:144:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                             if( (gid & kTMXFlippedMask) >= tileset->_firstGid )
+                                                                     ^
+[ 14%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTMXXMLParser.cpp.o
+[ 14%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTransition.cpp.o
+[ 14%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTransitionPageTurn.cpp.o
+[ 14%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTransitionProgress.cpp.o
+[ 14%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/2d/CCTweenFunction.cpp.o
+[ 15%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCAABB.cpp.o
+[ 15%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCAnimate3D.cpp.o
+[ 15%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCAnimation3D.cpp.o
+[ 15%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCAttachNode.cpp.o
+[ 15%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCBundle3D.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCBundle3D.cpp: In static member function ‘static bool cocos2d::Bundle3D::loadObj(cocos2d::MeshDatas&, cocos2d::MaterialDatas&, cocos2d::NodeDatas&, const string&, const char*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCBundle3D.cpp:277:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (last != -1)
+                      ^
+[ 15%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCBundleReader.cpp.o
+[ 16%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCFrustum.cpp.o
+[ 16%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCMesh.cpp.o
+[ 16%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCMeshSkin.cpp.o
+[ 16%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCMeshVertexIndexData.cpp.o
+[ 16%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCOBB.cpp.o
+[ 17%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCObjLoader.cpp.o
+[ 17%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCPlane.cpp.o
+[ 17%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCRay.cpp.o
+[ 17%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCSkeleton3D.cpp.o
+[ 17%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCSprite3D.cpp.o
+[ 17%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCSprite3DMaterial.cpp.o
+[ 18%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCBillBoard.cpp.o
+[ 18%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCSkybox.cpp.o
+[ 18%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCTextureCube.cpp.o
+[ 18%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/3d/CCTerrain.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp: In destructor ‘virtual cocos2d::Terrain::~Terrain()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:475:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i =0;i<_chunkLodIndicesSet.size();i++)
+                                             ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:480:50: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i =0;i<_chunkLodIndicesSkirtSet.size();i++)
+                                                  ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp: In member function ‘cocos2d::Terrain::ChunkIndices cocos2d::Terrain::lookForIndicesLOD(int*, int, bool*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:647:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(int i =0;i<_chunkLodIndicesSet.size();i++)
+                                                 ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp: In member function ‘cocos2d::Terrain::ChunkIndices cocos2d::Terrain::lookForIndicesLODSkrit(int, bool*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:684:50: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i =0;i<_chunkLodIndicesSkirtSet.size();i++)
+                                                  ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp: In member function ‘void cocos2d::Terrain::Chunk::calculateAABB()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:1183:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i =0;i<_originalVertices.size();i++)
+                                           ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp: In member function ‘void cocos2d::Terrain::Chunk::calculateSlope()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:1194:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0;i<_originalVertices.size();i++)
+                                            ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/3d/CCTerrain.cpp:1202:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0;i<_originalVertices.size();i++)
+                                            ^
+[ 18%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/CCSAXParser.cpp.o
+[ 19%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/CCThread.cpp.o
+[ 19%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/CCGLView.cpp.o
+[ 19%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/CCFileUtils.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCFileUtils.cpp: In member function ‘virtual bool cocos2d::FileUtils::createDirectory(const string&)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCFileUtils.cpp:1125:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < dirs.size(); ++i)
+                                   ^
+[ 19%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/CCImage.cpp.o
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCImage.cpp:78:0:
+/home/dragomir/git/arkanoid_default/cocos2d/external/webp/include/linux/decode.h:142:24: warning: ‘int WebPIsAlphaMode(WEBP_CSP_MODE)’ defined but not used [-Wunused-function]
+ static WEBP_INLINE int WebPIsAlphaMode(WEBP_CSP_MODE mode) {
+                        ^
+/home/dragomir/git/arkanoid_default/cocos2d/external/webp/include/linux/decode.h:148:24: warning: ‘int WebPIsRGBMode(WEBP_CSP_MODE)’ defined but not used [-Wunused-function]
+ static WEBP_INLINE int WebPIsRGBMode(WEBP_CSP_MODE mode) {
+                        ^
+/home/dragomir/git/arkanoid_default/cocos2d/external/webp/include/linux/decode.h:192:24: warning: ‘int WebPInitDecBuffer(WebPDecBuffer*)’ defined but not used [-Wunused-function]
+ static WEBP_INLINE int WebPInitDecBuffer(WebPDecBuffer* buffer) {
+                        ^
+/home/dragomir/git/arkanoid_default/cocos2d/external/webp/include/linux/decode.h:318:29: warning: ‘uint8_t* WebPIDecGetYUV(const WebPIDecoder*, int*, uint8_t**, uint8_t**, int*, int*, int*, int*)’ defined but not used [-Wunused-function]
+ static WEBP_INLINE uint8_t* WebPIDecGetYUV(
+                             ^
+[ 19%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/edtaa3func/edtaa3func.cpp.o
+[ 19%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/ConvertUTF/ConvertUTFWrapper.cpp.o
+[ 20%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/ConvertUTF/ConvertUTF.c.o
+[ 20%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/poly2tri/common/shapes.cc.o
+[ 20%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/poly2tri/sweep/advancing_front.cc.o
+[ 20%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/poly2tri/sweep/cdt.cc.o
+[ 20%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/poly2tri/sweep/sweep_context.cc.o
+[ 21%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/external/poly2tri/sweep/sweep.cc.o
+[ 21%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/linux/CCStdC-linux.cpp.o
+[ 21%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/linux/CCFileUtils-linux.cpp.o
+[ 21%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/linux/CCCommon-linux.cpp.o
+[ 21%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/linux/CCApplication-linux.cpp.o
+[ 21%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/linux/CCDevice-linux.cpp.o
+[ 22%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/platform/desktop/CCGLViewImpl-desktop.cpp.o
+[ 22%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/physics/CCPhysicsBody.cpp.o
+[ 22%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/physics/CCPhysicsContact.cpp.o
+[ 22%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/physics/CCPhysicsJoint.cpp.o
+[ 22%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/physics/CCPhysicsShape.cpp.o
+[ 23%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/physics/CCPhysicsWorld.cpp.o
+[ 23%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/CCAffineTransform.cpp.o
+[ 23%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/CCGeometry.cpp.o
+[ 23%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/CCVertex.cpp.o
+[ 23%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/Mat4.cpp.o
+[ 23%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/MathUtil.cpp.o
+[ 24%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/Quaternion.cpp.o
+[ 24%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/TransformUtils.cpp.o
+[ 24%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/Vec2.cpp.o
+[ 24%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/Vec3.cpp.o
+[ 24%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/math/Vec4.cpp.o
+[ 25%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCBatchCommand.cpp.o
+[ 25%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCCustomCommand.cpp.o
+[ 25%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCGLProgram.cpp.o
+[ 25%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCGLProgramCache.cpp.o
+[ 25%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCGLProgramState.cpp.o
+[ 25%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCGLProgramStateCache.cpp.o
+[ 26%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCGroupCommand.cpp.o
+[ 26%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCMeshCommand.cpp.o
+[ 26%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCPrimitive.cpp.o
+[ 26%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCPrimitiveCommand.cpp.o
+[ 26%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCQuadCommand.cpp.o
+[ 27%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCRenderCommand.cpp.o
+[ 27%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCRenderer.cpp.o
+[ 27%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCTexture2D.cpp.o
+[ 27%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCTextureAtlas.cpp.o
+[ 27%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCTextureCache.cpp.o
+[ 27%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCTrianglesCommand.cpp.o
+[ 28%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCVertexIndexBuffer.cpp.o
+[ 28%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/CCVertexIndexData.cpp.o
+[ 28%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/ccGLStateCache.cpp.o
+[ 28%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/renderer/ccShaders.cpp.o
+[ 28%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/allocator/CCAllocatorDiagnostics.cpp.o
+[ 29%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/allocator/CCAllocatorGlobal.cpp.o
+[ 29%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/allocator/CCAllocatorGlobalNewDelete.cpp.o
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/allocator/CCAllocatorGlobalNewDelete.cpp:27:0:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/allocator/CCAllocatorStrategyGlobalSmallBlock.h: In destructor ‘virtual cocos2d::allocator::AllocatorStrategyGlobalSmallBlock::~AllocatorStrategyGlobalSmallBlock()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/allocator/CCAllocatorStrategyGlobalSmallBlock.h:128:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i = 0; i <= kMaxSmallBlockPower; ++i)
+                              ^
+[ 29%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ccFPSImages.c.o
+[ 29%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCAsyncTaskPool.cpp.o
+[ 29%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCAutoreleasePool.cpp.o
+[ 29%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCConfiguration.cpp.o
+[ 30%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCConsole.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCConsole.cpp: In constructor ‘cocos2d::Console::Console()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCConsole.cpp:329:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < sizeof(commands)/sizeof(commands[0]); ++i)
+                                                         ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCConsole.cpp: In member function ‘void cocos2d::Console::commandUpload(int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCConsole.cpp:839:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for( n = 0; n < sizeof(buf) - 1; n++ )
+                                   ^
+[ 30%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCController.cpp.o
+[ 30%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCData.cpp.o
+[ 30%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCDataVisitor.cpp.o
+[ 30%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCDirector.cpp.o
+[ 31%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEvent.cpp.o
+[ 31%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventAcceleration.cpp.o
+[ 31%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventController.cpp.o
+[ 31%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventCustom.cpp.o
+[ 31%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventDispatcher.cpp.o
+[ 31%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventFocus.cpp.o
+[ 32%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventKeyboard.cpp.o
+[ 32%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListener.cpp.o
+[ 32%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerAcceleration.cpp.o
+[ 32%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerController.cpp.o
+[ 32%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerCustom.cpp.o
+[ 33%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerFocus.cpp.o
+[ 33%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerKeyboard.cpp.o
+[ 33%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerMouse.cpp.o
+[ 33%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventListenerTouch.cpp.o
+[ 33%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventMouse.cpp.o
+[ 33%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCEventTouch.cpp.o
+[ 34%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCIMEDispatcher.cpp.o
+[ 34%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCNS.cpp.o
+[ 34%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCProfiling.cpp.o
+[ 34%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCRef.cpp.o
+[ 34%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCScheduler.cpp.o
+[ 35%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCScriptSupport.cpp.o
+[ 35%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCTouch.cpp.o
+[ 35%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCUserDefault.cpp.o
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCUserDefault.h:28:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCUserDefault.cpp:25:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCUserDefault.cpp: In static member function ‘static void cocos2d::UserDefault::destroyInstance()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformMacros.h:214:51: warning: deleting object of polymorphic class type ‘cocos2d::UserDefault’ which has non-virtual destructor might cause undefined behaviour [-Wdelete-non-virtual-dtor]
+ #define CC_SAFE_DELETE(p)           do { delete (p); (p) = nullptr; } while(0)
+                                                   ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCUserDefault.cpp:428:5: note: in expansion of macro ‘CC_SAFE_DELETE’
+     CC_SAFE_DELETE(_userDefault);
+     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCUserDefault.cpp: In static member function ‘static void cocos2d::UserDefault::setDelegate(cocos2d::UserDefault*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCUserDefault.cpp:434:16: warning: deleting object of polymorphic class type ‘cocos2d::UserDefault’ which has non-virtual destructor might cause undefined behaviour [-Wdelete-non-virtual-dtor]
+         delete _userDefault;
+                ^
+[ 35%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/CCValue.cpp.o
+[ 35%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ObjectFactory.cpp.o
+[ 35%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/TGAlib.cpp.o
+[ 36%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ZipUtils.cpp.o
+[ 36%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/atitc.cpp.o
+[ 36%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/base64.cpp.o
+[ 36%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ccCArray.cpp.o
+[ 36%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ccRandom.cpp.o
+[ 37%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ccTypes.cpp.o
+[ 37%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ccUTF8.cpp.o
+[ 37%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/ccUtils.cpp.o
+[ 37%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/etc1.cpp.o
+[ 37%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/pvr.cpp.o
+[ 37%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/base/s3tc.cpp.o
+[ 38%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/audio/AudioEngine.cpp.o
+[ 38%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/audio/linux/SimpleAudioEngineFMOD.cpp.o
+[ 38%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/audio/linux/FmodAudioPlayer.cpp.o
+[ 38%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/CocosGUI.cpp.o
+[ 38%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIButton.cpp.o
+[ 39%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UICheckBox.cpp.o
+[ 39%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIDeprecated.cpp.o
+[ 39%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIHBox.cpp.o
+[ 39%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIHelper.cpp.o
+[ 39%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIImageView.cpp.o
+[ 39%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UILayout.cpp.o
+[ 40%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UILayoutManager.cpp.o
+[ 40%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UILayoutParameter.cpp.o
+[ 40%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIListView.cpp.o
+[ 40%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UILoadingBar.cpp.o
+[ 40%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIPageView.cpp.o
+[ 41%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIRelativeBox.cpp.o
+[ 41%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIRichText.cpp.o
+[ 41%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIScale9Sprite.cpp.o
+[ 41%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIScrollView.cpp.o
+[ 41%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UISlider.cpp.o
+[ 41%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIText.cpp.o
+[ 42%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UITextAtlas.cpp.o
+[ 42%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UITextBMFont.cpp.o
+[ 42%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UITextField.cpp.o
+[ 42%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIVBox.cpp.o
+[ 42%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIWebView.cpp.o
+[ 43%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIWidget.cpp.o
+[ 43%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIEditBox/UIEditBox.cpp.o
+[ 43%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UILayoutComponent.cpp.o
+[ 43%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/ui/UIEditBox/UIEditBoxImpl-stub.cpp.o
+[ 43%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/deprecated/CCArray.cpp.o
+[ 43%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/deprecated/CCDeprecated.cpp.o
+[ 44%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/deprecated/CCDictionary.cpp.o
+[ 44%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/deprecated/CCNotificationCenter.cpp.o
+[ 44%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/deprecated/CCSet.cpp.o
+[ 44%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/deprecated/CCString.cpp.o
+[ 44%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/network/HttpClient.cpp.o
+[ 45%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/network/SocketIO.cpp.o
+[ 45%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/network/WebSocket.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/network/WebSocket.cpp: In member function ‘int cocos2d::network::WebSocket::onSocketCallback(libwebsocket_context*, libwebsocket*, int, void*, void*, ssize_t)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/network/WebSocket.cpp:563:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if (data->len > c_bufferSize)
+                        ^
+[ 45%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCBAnimationManager.cpp.o
+[ 45%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCBFileLoader.cpp.o
+[ 45%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCBKeyframe.cpp.o
+[ 45%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCBReader.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCBReader.cpp: In member function ‘bool cocosbuilder::CCBReader::readHeader()’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCBReader.cpp:351:87: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(CC_SWAP_INT32_BIG_TO_HOST(magicBytes) != (*reinterpret_cast<const int*>("ccbi"))) {
+                                                                                       ^
+[ 46%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCBSequence.cpp.o
+[ 46%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCBSequenceProperty.cpp.o
+[ 46%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCControlButtonLoader.cpp.o
+[ 46%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCControlLoader.cpp.o
+[ 46%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCLabelBMFontLoader.cpp.o
+[ 47%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCLabelTTFLoader.cpp.o
+[ 47%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCLayerColorLoader.cpp.o
+[ 47%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCLayerGradientLoader.cpp.o
+[ 47%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCLayerLoader.cpp.o
+[ 47%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCMenuItemImageLoader.cpp.o
+[ 47%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCMenuItemLoader.cpp.o
+[ 48%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCNode+CCBRelativePositioning.cpp.o
+[ 48%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCNodeLoader.cpp.o
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCRefPtr.h:31:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/cocos2d.h:42,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:1:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp: In member function ‘virtual cocos2d::Node* cocosbuilder::NodeLoader::parsePropTypeCCBFile(cocos2d::Node*, cocos2d::Node*, cocosbuilder::CCBReader*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:971:75: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             CCASSERT(ownerCallbackNames.size() == ownerCallbackNodes.size(), "");
+                                                                           ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:43:17: note: in definition of macro ‘CCASSERT’
+           if (!(cond)) {                                          \
+                 ^
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/linux/CCPlatformDefine-linux.h:36:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformDefine.h:43,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformMacros.h:34,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCRef.h:29,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/cocos2d.h:41,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:1:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:971:75: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             CCASSERT(ownerCallbackNames.size() == ownerCallbackNodes.size(), "");
+                                                                           ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:46:13: note: in expansion of macro ‘CC_ASSERT’
+             CC_ASSERT(cond);                                      \
+             ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:971:13: note: in expansion of macro ‘CCASSERT’
+             CCASSERT(ownerCallbackNames.size() == ownerCallbackNodes.size(), "");
+             ^
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCRefPtr.h:31:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/cocos2d.h:42,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:1:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:985:71: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             CCASSERT(ownerOutletNames.size() == ownerOutletNodes.size(), "");
+                                                                       ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:43:17: note: in definition of macro ‘CCASSERT’
+           if (!(cond)) {                                          \
+                 ^
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/linux/CCPlatformDefine-linux.h:36:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformDefine.h:43,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformMacros.h:34,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCRef.h:29,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/cocos2d.h:41,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:1:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:985:71: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             CCASSERT(ownerOutletNames.size() == ownerOutletNodes.size(), "");
+                                                                       ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:46:13: note: in expansion of macro ‘CC_ASSERT’
+             CC_ASSERT(cond);                                      \
+             ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp:985:13: note: in expansion of macro ‘CCASSERT’
+             CCASSERT(ownerOutletNames.size() == ownerOutletNodes.size(), "");
+             ^
+[ 48%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCNodeLoaderLibrary.cpp.o
+[ 48%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCParticleSystemQuadLoader.cpp.o
+[ 48%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCScale9SpriteLoader.cpp.o
+[ 49%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCScrollViewLoader.cpp.o
+[ 49%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocosbuilder/CCSpriteLoader.cpp.o
+[ 49%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionFrame.cpp.o
+[ 49%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionFrameEasing.cpp.o
+[ 49%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionManagerEx.cpp.o
+[ 49%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionNode.cpp.o
+[ 50%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCActionObject.cpp.o
+[ 50%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmature.cpp.o
+[ 50%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmatureAnimation.cpp.o
+[ 50%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmatureDataManager.cpp.o
+[ 50%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCArmatureDefine.cpp.o
+[ 51%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCBatchNode.cpp.o
+[ 51%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCBone.cpp.o
+[ 51%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCColliderDetector.cpp.o
+[ 51%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComAttribute.cpp.o
+[ 51%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComAudio.cpp.o
+[ 51%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComController.cpp.o
+[ 52%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCComRender.cpp.o
+[ 52%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDataReaderHelper.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp: In static member function ‘static cocostudio::ContourData* cocostudio::DataReaderHelper::decodeContour(cocostudio::CocoLoader*, cocostudio::stExpCocoNode*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp:2481:21: warning: variable ‘str’ set but not used [-Wunused-but-set-variable]
+         const char *str = nullptr;
+                     ^
+[ 52%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDatas.cpp.o
+[ 52%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDecorativeDisplay.cpp.o
+[ 52%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDisplayFactory.cpp.o
+[ 53%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCDisplayManager.cpp.o
+[ 53%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCInputDelegate.cpp.o
+[ 53%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCProcessBase.cpp.o
+[ 53%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSGUIReader.cpp.o
+[ 53%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSSceneReader.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/CCSSceneReader.cpp: In member function ‘cocos2d::Node* cocostudio::SceneReader::createNodeWithSceneFile(const string&, cocostudio::SceneReader::AttachComponentType)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/CCSSceneReader.cpp:98:32: warning: variable ‘pRender’ set but not used [-Wunused-but-set-variable]
+                     ComRender *pRender = nullptr;
+                                ^
+[ 53%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSkin.cpp.o
+[ 54%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCSpriteFrameCacheHelper.cpp.o
+[ 54%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCTransformHelp.cpp.o
+[ 54%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCTween.cpp.o
+[ 54%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCUtilMath.cpp.o
+[ 54%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CocoLoader.cpp.o
+[ 55%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/DictionaryHelper.cpp.o
+[ 55%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/TriggerBase.cpp.o
+[ 55%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/TriggerMng.cpp.o
+[ 55%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/TriggerObj.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/TriggerObj.cpp: In member function ‘virtual void cocostudio::TriggerObj::serialize(cocostudio::CocoLoader*, cocostudio::stExpCocoNode*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/TriggerObj.cpp:248:9: warning: variable ‘num’ set but not used [-Wunused-but-set-variable]
+     int num = 0;
+         ^
+[ 55%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/FlatBuffersSerialize.cpp.o
+[ 55%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CCObjectExtensionData.cpp.o
+[ 56%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/CocoStudio.cpp.o
+[ 56%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/NodeReader/NodeReader.cpp.o
+[ 56%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SingleNodeReader/SingleNodeReader.cpp.o
+[ 56%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SpriteReader/SpriteReader.cpp.o
+[ 56%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ParticleReader/ParticleReader.cpp.o
+[ 57%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp: In member function ‘virtual cocos2d::Node* cocostudio::GameMapReader::createNodeWithFlatBuffers(const flatbuffers::Table*)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/WidgetReader/GameMapReader/GameMapReader.cpp:194:85: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                                             if( (gid & kTMXFlippedMask) >= tileset->_firstGid )
+                                                                                     ^
+[ 57%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ProjectNodeReader/ProjectNodeReader.cpp.o
+[ 57%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ComAudioReader/ComAudioReader.cpp.o
+[ 57%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/WidgetReader.cpp.o
+[ 57%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp.o
+[ 57%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp.o
+[ 58%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp.o
+[ 58%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp.o
+[ 58%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp.o
+[ 58%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp.o
+[ 58%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp.o
+[ 59%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Node3DReader/Node3DReader.cpp.o
+[ 59%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/UserCameraReader/UserCameraReader.cpp.o
+[ 59%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Particle3DReader/Particle3DReader.cpp.o
+[ 59%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/Sprite3DReader/Sprite3DReader.cpp.o
+[ 59%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp.o
+[ 59%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp.o
+[ 60%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp.o
+[ 60%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp.o
+[ 60%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp.o
+[ 60%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp.o
+[ 60%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.cpp:77:20: warning: ‘cocostudio::timeline::ALPHA’ defined but not used [-Wunused-variable]
+ static const char* ALPHA            = "alpha";
+                    ^
+[ 61%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCActionTimeline.cpp.o
+[ 61%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCActionTimelineNode.cpp.o
+[ 61%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCFrame.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp: In member function ‘virtual void cocostudio::timeline::SkewFrame::onApply(float)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp:285:26: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if (nullptr != _node && _betweenSkewX != 0 || _betweenSkewY != 0)
+                          ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp: In member function ‘virtual void cocostudio::timeline::RotationSkewFrame::onApply(float)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp:345:26: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if (nullptr != _node && _betweenSkewX != 0 || _betweenSkewY != 0)
+                          ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp: In member function ‘virtual void cocostudio::timeline::ScaleFrame::onApply(float)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp:463:26: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if (nullptr != _node && _betweenScaleX != 0 || _betweenScaleY != 0)
+                          ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp: In member function ‘virtual void cocostudio::timeline::ColorFrame::onApply(float)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp:697:26: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+     if (nullptr != _node && _betweenRed != 0 || _betweenGreen != 0 || _betweenBlue != 0)
+                          ^
+[ 61%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp: In member function ‘virtual void cocostudio::timeline::Timeline::binarySearchKeyFrame(int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:142:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (frameIndex < _frames.at(0)->getFrameIndex())
+                                                       ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:144:70: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(_currentKeyFrameIndex >= _frames.at(0)->getFrameIndex())
+                                                                      ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:155:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         else if(frameIndex >= _frames.at(length - 1)->getFrameIndex())
+                                                                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:170:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(frameIndex >= _frames.at(mid)->getFrameIndex() && frameIndex < _frames.at(mid+1)->getFrameIndex()) 
+                                                             ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:170:112: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(frameIndex >= _frames.at(mid)->getFrameIndex() && frameIndex < _frames.at(mid+1)->getFrameIndex()) 
+                                                                                                                ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:175:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(_frames.at(mid)->getFrameIndex()>frameIndex)
+                                                 ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:191:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(target == 0 && _currentKeyFrameIndex<from->getFrameIndex())
+                                                                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp: In member function ‘virtual void cocostudio::timeline::Timeline::updateCurrentKeyFrame(int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:217:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (frameIndex < _frames.at(0)->getFrameIndex())
+                                                           ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:224:73: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             else if(frameIndex >= _frames.at(length - 1)->getFrameIndex())
+                                                                         ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:246:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if(frameIndex == from->getFrameIndex())
+                                                      ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:248:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if(frameIndex > from->getFrameIndex() && frameIndex < to->getFrameIndex())
+                                                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp:248:89: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if(frameIndex > from->getFrameIndex() && frameIndex < to->getFrameIndex())
+                                                                                         ^
+[ 61%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/ActionTimeline/CSLoader.cpp.o
+[ 61%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp: In member function ‘std::string ArmatureNodeReader::getArmatureName(const string&)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/cocostudio/WidgetReader/ArmatureNodeReader/ArmatureNodeReader.cpp:192:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (start == -1)
+                ^
+[ 62%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Animation.c.o
+[ 62%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/AnimationState.c.o
+[ 62%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/AnimationStateData.c.o
+[ 62%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Atlas.c.o
+[ 62%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/AtlasAttachmentLoader.c.o
+[ 63%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Attachment.c.o
+[ 63%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/AttachmentLoader.c.o
+[ 63%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Bone.c.o
+[ 63%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/BoneData.c.o
+[ 63%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/BoundingBoxAttachment.c.o
+[ 63%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Event.c.o
+[ 64%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/EventData.c.o
+[ 64%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/extension.c.o
+[ 64%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/IkConstraint.c.o
+[ 64%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/IkConstraintData.c.o
+[ 64%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Json.c.o
+[ 65%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/MeshAttachment.c.o
+[ 65%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/PolygonBatch.cpp.o
+[ 65%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/RegionAttachment.c.o
+[ 65%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Skeleton.c.o
+[ 65%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SkeletonAnimation.cpp.o
+[ 65%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SkeletonBounds.c.o
+[ 66%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SkeletonData.c.o
+[ 66%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SkeletonJson.c.o
+[ 66%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SkeletonRenderer.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp: In member function ‘virtual void spine::SkeletonRenderer::drawSkeleton(const cocos2d::Mat4&, uint32_t)’:
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:240:20: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255);
+                    ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:240:49: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255);
+                                                 ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:253:21: warning: ‘void cocos2d::DrawPrimitives::drawPoly(const cocos2d::Vec2*, unsigned int, bool)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:142) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoly(points, 4, true);
+                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:253:45: warning: ‘void cocos2d::DrawPrimitives::drawPoly(const cocos2d::Vec2*, unsigned int, bool)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:142) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoly(points, 4, true);
+                                             ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:259:20: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(255, 0, 0, 255);
+                    ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:259:49: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(255, 0, 0, 255);
+                                                 ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:264:21: warning: ‘void cocos2d::DrawPrimitives::drawLine(const cocos2d::Vec2&, const cocos2d::Vec2&)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:115) [-Wdeprecated-declarations]
+     DrawPrimitives::drawLine(Vec2(bone->worldX, bone->worldY), Vec2(x, y));
+                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:264:74: warning: ‘void cocos2d::DrawPrimitives::drawLine(const cocos2d::Vec2&, const cocos2d::Vec2&)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:115) [-Wdeprecated-declarations]
+     DrawPrimitives::drawLine(Vec2(bone->worldX, bone->worldY), Vec2(x, y));
+                                                                          ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:267:20: warning: ‘void cocos2d::DrawPrimitives::setPointSize(GLfloat)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:263) [-Wdeprecated-declarations]
+    DrawPrimitives::setPointSize(4);
+                    ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:267:34: warning: ‘void cocos2d::DrawPrimitives::setPointSize(GLfloat)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:263) [-Wdeprecated-declarations]
+    DrawPrimitives::setPointSize(4);
+                                  ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:268:20: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255); // Root bone is blue.
+                    ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:268:49: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+    DrawPrimitives::setDrawColor4B(0, 0, 255, 255); // Root bone is blue.
+                                                 ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:271:21: warning: ‘void cocos2d::DrawPrimitives::drawPoint(const cocos2d::Vec2&)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:100) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoint(Vec2(bone->worldX, bone->worldY));
+                     ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:271:63: warning: ‘void cocos2d::DrawPrimitives::drawPoint(const cocos2d::Vec2&)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:100) [-Wdeprecated-declarations]
+     DrawPrimitives::drawPoint(Vec2(bone->worldX, bone->worldY));
+                                                               ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:272:33: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+     if (i == 0) DrawPrimitives::setDrawColor4B(0, 255, 0, 255);
+                                 ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp:272:62: warning: ‘void cocos2d::DrawPrimitives::setDrawColor4B(GLubyte, GLubyte, GLubyte, GLubyte)’ is deprecated (declared at /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCDrawingPrimitives.h:245) [-Wdeprecated-declarations]
+     if (i == 0) DrawPrimitives::setDrawColor4B(0, 255, 0, 255);
+                                                              ^
+[ 66%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Skin.c.o
+[ 66%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SkinnedMeshAttachment.c.o
+[ 67%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/Slot.c.o
+[ 67%] Building C object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/SlotData.c.o
+[ 67%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/editor-support/spine/spine-cocos2dx.cpp.o
+[ 67%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/AssetsManager.cpp.o
+[ 67%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/AssetsManagerEx.cpp.o
+[ 67%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/CCEventAssetsManagerEx.cpp.o
+[ 68%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/CCEventListenerAssetsManagerEx.cpp.o
+[ 68%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/Downloader.cpp.o
+[ 68%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/assets-manager/Manifest.cpp.o
+[ 68%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControl.cpp.o
+[ 68%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlButton.cpp.o
+[ 69%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlColourPicker.cpp.o
+[ 69%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp.o
+[ 69%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlPotentiometer.cpp.o
+[ 69%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp.o
+[ 69%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlSlider.cpp.o
+[ 69%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlStepper.cpp.o
+[ 70%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlSwitch.cpp.o
+[ 70%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCControlUtils.cpp.o
+[ 70%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCControlExtension/CCInvocation.cpp.o
+[ 70%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCScrollView/CCScrollView.cpp.o
+[ 70%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCScrollView/CCTableView.cpp.o
+[ 71%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/GUI/CCScrollView/CCTableViewCell.cpp.o
+[ 71%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/physics-nodes/CCPhysicsDebugNode.cpp.o
+[ 71%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/physics-nodes/CCPhysicsSprite.cpp.o
+[ 71%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticle3DAffector.cpp.o
+[ 71%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticle3DEmitter.cpp.o
+[ 71%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticle3DRender.cpp.o
+[ 72%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/CCParticleSystem3D.cpp.o
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCNode.h:32:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.h:28,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp:25:
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp: In member function ‘cocos2d::Particle3DAffector* cocos2d::ParticleSystem3D::getAffector(int)’:
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp:155:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     CCASSERT(index < _affectors.size(), "wrong index");
+                                      ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:43:17: note: in definition of macro ‘CCASSERT’
+           if (!(cond)) {                                          \
+                 ^
+In file included from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/linux/CCPlatformDefine-linux.h:36:0,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformDefine.h:43,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/platform/CCPlatformMacros.h:34,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCRef.h:29,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/CCConsole.h:50,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:35,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/cocos/2d/CCNode.h:32,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.h:28,
+                 from /home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp:25:
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp:155:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     CCASSERT(index < _affectors.size(), "wrong index");
+                                      ^
+/home/dragomir/git/arkanoid_default/cocos2d/cocos/base/ccMacros.h:46:13: note: in expansion of macro ‘CC_ASSERT’
+             CC_ASSERT(cond);                                      \
+             ^
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/CCParticleSystem3D.cpp:155:5: note: in expansion of macro ‘CCASSERT’
+     CCASSERT(index < _affectors.size(), "wrong index");
+     ^
+[ 72%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp.o
+[ 72%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDynamicAttributeTranslator.cpp.o
+[ 72%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUForceField.cpp.o
+[ 72%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMaterialManager.cpp.o
+[ 73%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp.o
+[ 73%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUNoise.cpp.o
+[ 73%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlane.cpp.o
+[ 73%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURendererTranslator.cpp.o
+[ 73%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptCompiler.cpp.o
+[ 73%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptLexer.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.cpp: In member function ‘void cocos2d::PUScriptLexer::openLexer(const string&, const string&, cocos2d::PUScriptTokenList&)’:
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.cpp:51:43: warning: variable ‘lastQuote’ set but not used [-Wunused-but-set-variable]
+     unsigned int line = 1, state = READY, lastQuote = 0;
+                                           ^
+[ 74%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptParser.cpp.o
+[ 74%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScriptTranslator.cpp.o
+[ 74%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSimpleSpline.cpp.o
+[ 74%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphere.cpp.o
+[ 74%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTechniqueTranslator.cpp.o
+[ 75%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTranslateManager.cpp.o
+[ 75%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUUtil.cpp.o
+[ 75%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleSystem3D.cpp.o
+[ 75%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.cpp.o
+[ 75%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUListener.cpp.o
+[ 75%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAffector.cpp.o
+[ 76%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAffectorManager.cpp.o
+[ 76%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAffectorTranslator.cpp.o
+[ 76%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAlignAffector.cpp.o
+[ 76%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUAlignAffectorTranslator.cpp.o
+[ 76%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseCollider.cpp.o
+[ 77%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseColliderTranslator.cpp.o
+[ 77%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseForceAffector.cpp.o
+[ 77%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.cpp.o
+[ 77%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxCollider.cpp.o
+[ 77%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxColliderTranslator.cpp.o
+[ 77%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.cpp.o
+[ 78%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.cpp.o
+[ 78%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUColorAffector.cpp.o
+[ 78%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUColorAffectorTranslator.cpp.o
+[ 78%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp.o
+[ 78%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.cpp.o
+[ 79%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUForceFieldAffector.cpp.o
+[ 79%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.cpp.o
+[ 79%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGeometryRotator.cpp.o
+[ 79%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.cpp.o
+[ 79%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGravityAffector.cpp.o
+[ 79%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGravityAffectorTranslator.cpp.o
+[ 80%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUInterParticleCollider.cpp.o
+[ 80%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.cpp.o
+[ 80%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUJetAffector.cpp.o
+[ 80%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUJetAffectorTranslator.cpp.o
+[ 80%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineAffector.cpp.o
+[ 81%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineAffectorTranslator.cpp.o
+[ 81%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULinearForceAffector.cpp.o
+[ 81%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.cpp.o
+[ 81%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleFollower.cpp.o
+[ 81%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUParticleFollowerTranslator.cpp.o
+[ 81%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPathFollower.cpp.o
+[ 82%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPathFollowerTranslator.cpp.o
+[ 82%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneCollider.cpp.o
+[ 82%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneColliderTranslator.cpp.o
+[ 82%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURandomiser.cpp.o
+[ 82%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURandomiserTranslator.cpp.o
+[ 83%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleAffector.cpp.o
+[ 83%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleAffectorTranslator.cpp.o
+[ 83%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleVelocityAffector.cpp.o
+[ 83%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.cpp.o
+[ 83%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSineForceAffector.cpp.o
+[ 83%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.cpp.o
+[ 84%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereCollider.cpp.o
+[ 84%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereColliderTranslator.cpp.o
+[ 84%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureAnimator.cpp.o
+[ 84%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.cpp.o
+[ 84%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureRotator.cpp.o
+[ 85%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUTextureRotatorTranslator.cpp.o
+[ 85%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVelocityMatchingAffector.cpp.o
+[ 85%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.cpp.o
+[ 85%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVortexAffector.cpp.o
+[ 85%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVortexAffectorTranslator.cpp.o
+[ 85%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxEmitter.cpp.o
+[ 86%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBoxEmitterTranslator.cpp.o
+[ 86%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCircleEmitter.cpp.o
+[ 86%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUCircleEmitterTranslator.cpp.o
+[ 86%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEmitter.cpp.o
+[ 86%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEmitterManager.cpp.o
+[ 87%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEmitterTranslator.cpp.o
+[ 87%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineEmitter.cpp.o
+[ 87%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPULineEmitterTranslator.cpp.o
+[ 87%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.cpp.o
+[ 87%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.cpp.o
+[ 87%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPointEmitter.cpp.o
+[ 88%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPointEmitterTranslator.cpp.o
+[ 88%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPositionEmitter.cpp.o
+[ 88%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPositionEmitterTranslator.cpp.o
+[ 88%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveEmitter.cpp.o
+[ 88%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.cpp.o
+[ 89%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.cpp.o
+[ 89%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.cpp.o
+[ 89%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUVertexEmitter.cpp.o
+[ 89%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURender.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/PU/CCPURender.cpp:53:13: warning: ‘bool cocos2d::compareParticle3D(cocos2d::PUParticle3D*, cocos2d::PUParticle3D*)’ defined but not used [-Wunused-function]
+ static bool compareParticle3D(PUParticle3D* left, PUParticle3D* right)
+             ^
+[ 89%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBeamRender.cpp.o
+[ 89%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBillboardChain.cpp.o
+[ 90%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURibbonTrail.cpp.o
+[ 90%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPURibbonTrailRender.cpp.o
+[ 90%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoAffectorEventHandler.cpp.o
+[ 90%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoAffectorEventHandlerTranslator.cpp.o
+[ 90%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoEnableComponentEventHandler.cpp.o
+[ 91%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoEnableComponentEventHandlerTranslator.cpp.o
+[ 91%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoExpireEventHandler.cpp.o
+[ 91%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoExpireEventHandlerTranslator.cpp.o
+[ 91%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoFreezeEventHandler.cpp.o
+[ 91%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoFreezeEventHandlerTranslator.cpp.o
+[ 91%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoPlacementParticleEventHandler.cpp.o
+[ 92%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoPlacementParticleEventHandlerTranslator.cpp.o
+[ 92%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoScaleEventHandler.cpp.o
+[ 92%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoScaleEventHandlerTranslator.cpp.o
+[ 92%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoStopSystemEventHandler.cpp.o
+[ 92%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUDoStopSystemEventHandlerTranslator.cpp.o
+[ 93%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEventHandler.cpp.o
+[ 93%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEventHandlerManager.cpp.o
+[ 93%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUEventHandlerTranslator.cpp.o
+[ 93%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUObserver.cpp.o
+[ 93%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUObserverManager.cpp.o
+[ 93%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUObserverTranslator.cpp.o
+[ 94%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnClearObserver.cpp.o
+[ 94%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnClearObserverTranslator.cpp.o
+[ 94%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCollisionObserver.cpp.o
+[ 94%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.cpp.o
+[ 94%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCountObserver.cpp.o
+[ 95%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnCountObserverTranslator.cpp.o
+[ 95%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEmissionObserver.cpp.o
+[ 95%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.cpp.o
+[ 95%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEventFlagObserver.cpp.o
+[ 95%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.cpp.o
+[ 95%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnExpireObserver.cpp.o
+[ 96%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp.o
+[ 96%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnPositionObserver.cpp.o
+[ 96%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.cpp.o
+[ 96%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp.o
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp: In member function ‘virtual void cocos2d::PUOnQuotaObserver::postUpdateObserver(float)’:
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp:66:98: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         _result = static_cast<PUParticleSystem3D *>(_particleSystem)->getAliveParticleCount() >= quota;
+                                                                                                  ^
+/home/dragomir/git/arkanoid_default/cocos2d/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp:80:98: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         _result = static_cast<PUParticleSystem3D *>(_particleSystem)->getAliveParticleCount() >= quota;
+                                                                                                  ^
+[ 96%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.cpp.o
+[ 97%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnRandomObserver.cpp.o
+[ 97%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.cpp.o
+[ 97%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnTimeObserver.cpp.o
+[ 97%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.cpp.o
+[ 97%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnVelocityObserver.cpp.o
+[ 97%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.cpp.o
+[ 98%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBehaviour.cpp.o
+[ 98%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBehaviourManager.cpp.o
+[ 98%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUBehaviourTranslator.cpp.o
+[ 98%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveBehaviour.cpp.o
+[ 98%] Building CXX object cocos2d/cocos/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUSlaveBehaviourTranslator.cpp.o
+Linking CXX static library ../../lib/libcocos2d.a
+[ 98%] Built target cocos2d
+Scanning dependencies of target MyGame
+[ 98%] Building CXX object CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
+[ 98%] Building CXX object CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
+[ 98%] Building CXX object CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
+Linking CXX executable bin/MyGame
+[ 98%] Built target MyGame
+Scanning dependencies of target flatbuffers
+[ 99%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/flatc.cpp.o
+[ 99%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/idl_gen_cpp.cpp.o
+[ 99%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/idl_gen_fbs.cpp.o
+[ 99%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/idl_gen_general.cpp.o
+[ 99%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/idl_gen_go.cpp.o
+[ 99%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/idl_gen_text.cpp.o
+[100%] Building CXX object cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/idl_parser.cpp.o
+Linking CXX static library ../../../lib/libflatbuffers.a
+[100%] Built target flatbuffers
