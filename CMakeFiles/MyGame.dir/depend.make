@@ -1196,6 +1196,7 @@ CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o: cocos2d/cocos/renderer/ccShader
 
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: Classes/scenes/LevelScene.cpp
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: Classes/scenes/LevelScene.h
+CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: Classes/scenes/MenuScene.h
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: /usr/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: /usr/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: Classes/game/Ball.h

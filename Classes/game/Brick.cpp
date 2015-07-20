@@ -28,19 +28,31 @@ arkanoid::Brick::Brick(int type) {
   
   this->type = type;
   
+  this->initPhysicsBody();
+  this->setTag(BRICK_TAG); // Tags are used in contact callbacks so we know it's a brick!
+  
+}
+
+void arkanoid::Brick::initPhysicsBody() {
   auto physicsBody = cocos2d::PhysicsBody::createBox(this->getContentSize(), arkanoid::Brick::material);
   physicsBody->setCategoryBitmask(COLLISION_GROUP_BRICK);
   physicsBody->setCollisionBitmask(COLLIDE_WITH_ALL);
   physicsBody->setContactTestBitmask(COLLIDE_WITH_ALL);
   physicsBody->setDynamic(false);
   
-  this->setTag(BRICK_TAG); // Tags are used in contact callbacks so we know it's a brick!
-  //this->setPosition(offsetX, offsetY);
   this->setPhysicsBody(physicsBody);
 }
 
+
 void arkanoid::Brick::destroy() {
   this->destroyed = true;
-  this->removeFromParentAndCleanup(true);
+  this->getPhysicsBody()->setEnable(false);
+  this->setVisible(false);
+}
+
+void arkanoid::Brick::recreate() {
+  this->destroyed = false;
+  this->getPhysicsBody()->setEnable(true);
+  this->setVisible(true);
 }
 

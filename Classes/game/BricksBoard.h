@@ -34,9 +34,13 @@ namespace arkanoid {
      * @param screenWidth
      * @param screenHeight
      */
-    void createBoard (int width, int height, float screenWidth, float screenHeight);
+    void createBoard(int width, int height, float screenWidth, float screenHeight);
+    
+    void resetBoard();
     
     std::vector<arkanoid::Brick*>* getBricks ();
+    
+    int getBricksCount();
     
     virtual ~BricksBoard();
 

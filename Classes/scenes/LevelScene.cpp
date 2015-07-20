@@ -4,7 +4,7 @@ USING_NS_CC;
 
 Scene* LevelScene::createScene() {
   auto scene = Scene::createWithPhysics();
-  scene->getPhysicsWorld()->setDebugDrawMask(cocos2d::PhysicsWorld::DEBUGDRAW_ALL);
+  //scene->getPhysicsWorld()->setDebugDrawMask(cocos2d::PhysicsWorld::DEBUGDRAW_ALL);
 
   auto layer = LevelScene::create();
   
@@ -64,8 +64,9 @@ void LevelScene::createBall() {
 }
 
 void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visibleSize) {
-  float padding = 20.0f;
+  float padding = 20.0f; // how much padding of the edges of the screen UI labels have
   
+  // Score label
   this->scoreLabel = Label::createWithTTF("Score:", "fonts/Marker Felt.ttf", 24);
   this->scoreLabel->setAnchorPoint(cocos2d::Vec2(0.0f, 0.0f));
   this->scoreLabel->setPosition(
@@ -73,6 +74,7 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
     origin.y + visibleSize.height - this->scoreLabel->getContentSize().height - padding
   );
   
+  // Lives label
   this->livesLabel = Label::createWithTTF("Lives:", "fonts/Marker Felt.ttf", 24);
   this->livesLabel->setAnchorPoint(cocos2d::Vec2(0.0f, 0.0f));
   this->livesLabel->setPosition(
@@ -80,8 +82,38 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
     origin.y + visibleSize.height - this->scoreLabel->getContentSize().height - this->scoreLabel->getContentSize().height * 1.5f - padding
   );
   
+  // TODO: rewrite below, organise in some sort of layers/screens for each situation
+  
+  // Game over label
+  this->gameOverLabel = Label::createWithTTF("GAME OVER", "fonts/Marker Felt.ttf", 42);
+  this->gameOverLabel->setPosition(
+    origin.x + visibleSize.width * 0.5f,
+    origin.y + visibleSize.height * 0.5f
+  );
+  this->gameOverLabel->setVisible(false);
+  
+  // Hint after game is over or won
+  this->continueHint = Label::createWithTTF("Press mouse button to start over, ESC to go back to the menu", "fonts/Marker Felt.ttf", 24);
+  this->continueHint->setPosition(
+    origin.x + visibleSize.width * 0.5f,
+    origin.y + visibleSize.height * 0.5f - this->gameOverLabel->getContentSize().height * 1.5f
+  );
+  this->continueHint->setVisible(false);
+  
+  // Game won label
+  this->winLabel = Label::createWithTTF("STAGE CLEARED", "fonts/Marker Felt.ttf", 42);
+  this->winLabel->setPosition(
+    origin.x + visibleSize.width * 0.5f,
+    origin.y + visibleSize.height * 0.5f
+  );
+  this->winLabel->setVisible(false);
+  
+  
   this->addChild(this->scoreLabel);
   this->addChild(this->livesLabel);
+  this->addChild(this->gameOverLabel);
+  this->addChild(this->continueHint);
+  this->addChild(this->winLabel);
 }
 
 void LevelScene::updateScoreUI() {
@@ -95,6 +127,10 @@ void LevelScene::updateLivesUI() {
 void LevelScene::gainScore(int increase) {
   this->score += increase;
   this->updateScoreUI();
+  
+  if (this->score == this->bricksBoard->getBricksCount()) {
+    this->gameWon();
+  }
 }
 
 void LevelScene::loseLife() {
@@ -103,12 +139,46 @@ void LevelScene::loseLife() {
   if (this->lives == 0) {
     this->gameOver();
   }
+  else {
+    this->ball->killVelocity();
+    this->gameState = GAME_STATE_INITIAL;
+    this->ball->alignWithPaddle(this->paddle);
+    
+    /*
+     * Because ball position depends on physcis we need to schedule a separate 
+     * event to make sure the ball position is set correctly to in front of 
+     * the paddle
+     */
+    this->scheduleOnce(CC_SCHEDULE_SELECTOR(LevelScene::resetBallPosition), 0.1f);
+  }
   
   this->updateLivesUI();
 }
 
-void LevelScene::gameOver() {
+void LevelScene::gameWon() {
+  this->gameState = GAME_STATE_WON;
   
+  this->ball->killVelocity();
+  this->winLabel->setVisible(true);
+  this->continueHint->setVisible(true);
+}
+
+void LevelScene::gameOver() {
+  this->gameState = GAME_STATE_OVER;
+  
+  this->gameOverLabel->setVisible(true);
+  this->continueHint->setVisible(true);
+}
+
+void LevelScene::resetGame() {
+  this->resetGameVariables();
+  this->bricksBoard->resetBoard();
+  this->ball->alignWithPaddle(this->paddle);
+  this->gameState = GAME_STATE_INITIAL;
+  
+  this->continueHint->setVisible(false);
+  this->gameOverLabel->setVisible(false);
+  this->winLabel->setVisible(false);
 }
 
 void LevelScene::setupCollisionEvents() {
@@ -118,33 +188,38 @@ void LevelScene::setupCollisionEvents() {
 }
 
 void LevelScene::setupMouseEvents() {
-  this->mouseEventListener = EventListenerMouse::create();
-  this->mouseEventListener->onMouseMove = CC_CALLBACK_1(LevelScene::onMouseMove, this);
-  this->mouseEventListener->onMouseDown = CC_CALLBACK_1(LevelScene::onMouseClick, this);
-  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(this->mouseEventListener, this);
+  auto mouseEventListener = EventListenerMouse::create();
+  mouseEventListener->onMouseMove = CC_CALLBACK_1(LevelScene::onMouseMove, this);
+  mouseEventListener->onMouseDown = CC_CALLBACK_1(LevelScene::onMouseClick, this);
+  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseEventListener, this);
+}
+
+void LevelScene::setupKeyboardEvents() {
+  auto keyboardListener = cocos2d::EventListenerKeyboard::create();
+  keyboardListener->onKeyPressed = CC_CALLBACK_2(LevelScene::onKeyPressed, this);
+  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(keyboardListener, this);
 }
 
 // CALLBACKS start here
 
 void LevelScene::onMouseMove (Event* event) {
   EventMouse* e = (EventMouse*) event;
-  std::string str = "MousePosition X:";
-  str = str + std::to_string(e->getCursorX()) + " Y:" + std::to_string(e->getCursorY());
-
+  
   this->paddle->setPosition(e->getCursorX());
   
   if (gameState == GAME_STATE_INITIAL) {
     this->ball->alignWithPaddle(this->paddle);
   }
-
-  //cocos2d::log(str.c_str());
 }
 
 void LevelScene::onMouseClick(Event* event) {
-  if (gameState == GAME_STATE_INITIAL) {
-    gameState = GAME_STATE_PLAYING;
+  if (this->gameState == GAME_STATE_INITIAL) {
+    this->gameState = GAME_STATE_PLAYING;
     
     this->ball->applyVelocity();
+  }
+  else if (this->gameState == GAME_STATE_OVER || this->gameState == GAME_STATE_WON) {
+    this->resetGame();
   }
 }
 
@@ -167,9 +242,8 @@ bool LevelScene::onContactBegin (cocos2d::PhysicsContact& contact) {
        (nodeA->getTag() == WORLD_BOUND_BOTTOM && nodeB->getTag() == BALL_TAG)) {
       // Ball hit the bottom of the screen!
       this->loseLife();
-      cocos2d::log("collision bottom");
+      return false; // Ignore normal collision processing
     }
-    
     
     if (brick) {
       brick->destroy();
@@ -177,13 +251,19 @@ bool LevelScene::onContactBegin (cocos2d::PhysicsContact& contact) {
     }
   }
   
-  
-
-  //bodies can collide
+  // Bodies can collide
   return true;
 }
 
-void LevelScene::restartGame() {
+void LevelScene::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
+  // On escape go back to menu
+  if (keyCode == EventKeyboard::KeyCode::KEY_ESCAPE) {
+    auto menu = MenuScene::createScene();
+    cocos2d::Director::getInstance()->replaceScene(menu);
+  }
+}
+
+void LevelScene::resetGameVariables() {
   this->lives = 3;
   this->score = 0;
   this->gameState = GAME_STATE_INITIAL;
@@ -192,8 +272,11 @@ void LevelScene::restartGame() {
   this->updateScoreUI();
 }
 
+void LevelScene::resetBallPosition(float dt) {
+  this->ball->alignWithPaddle(this->paddle);
+}
+
 bool LevelScene::init() {
-  
   if (!Layer::init()) {
     return false;
   }
@@ -209,55 +292,10 @@ bool LevelScene::init() {
   
   this->setupCollisionEvents();
   this->setupMouseEvents();
+  this->setupKeyboardEvents();
   
-  this->restartGame();
+  this->resetGameVariables();
   
-  // Display initial values
-
-  /*
-  /////////////////////////////
-  // 2. add a menu item with "X" image, which is clicked to quit the program
-  //    you may modify it.
-
-  // add a "close" icon to exit the progress. it's an autorelease object
-  auto closeItem = MenuItemImage::create(
-                                         "CloseNormal.png",
-                                         "CloseSelected.png",
-                                         CC_CALLBACK_1(LevelScene::menuCloseCallback, this));
-    
-      closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
-                              origin.y + closeItem->getContentSize().height/2));
-
-  // create menu, it's an autorelease object
-  auto menu = Menu::create(closeItem, NULL);
-  menu->setPosition(Vec2::ZERO);
-  this->addChild(menu, 1);
-
-  /////////////////////////////
-  // 3. add your codes below...
-
-  // add a label shows "Hello World"
-  // create and initialize a label
-    
-  auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
-    
-  // position the label on the center of the screen
-  label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                          origin.y + visibleSize.height - label->getContentSize().height));
-
-  // add the label as a child to this layer
-  this->addChild(label, 1);
-
-  // add "HelloWorld" splash screen"
-  auto sprite = Sprite::create("HelloWorld.png");
-
-  // position the sprite on the center of the screen
-  sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-  // add the sprite as a child to this layer
-  this->addChild(sprite, 0);
-    
-   */
   return true;
 }
 

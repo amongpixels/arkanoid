@@ -35,6 +35,7 @@ void arkanoid::Ball::applyVelocity() {
 }
 
 void arkanoid::Ball::killVelocity() {
+  this->physicsBody->resetForces();
   this->physicsBody->setVelocity(cocos2d::Vec2::ZERO);
   this->physicsBody->setAngularVelocity(0.0f);
 }

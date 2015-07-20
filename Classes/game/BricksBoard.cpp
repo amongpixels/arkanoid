@@ -46,6 +46,16 @@ void arkanoid::BricksBoard::createBoard(int width, int height, float screenWidth
   }
 }
 
+int arkanoid::BricksBoard::getBricksCount() {
+  return this->bricks.size();
+}
+
+void arkanoid::BricksBoard::resetBoard() {
+  for (auto brick : this->bricks) {
+    brick->recreate();
+  }
+}
+
 std::vector<arkanoid::Brick*>* arkanoid::BricksBoard::getBricks() {
   return &this->bricks;
 }

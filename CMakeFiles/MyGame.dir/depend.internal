@@ -1197,6 +1197,7 @@ CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o
  /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp
  /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.h
+ /home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.h
  /usr/include/GLFW/glfw3.h
  /usr/include/GLFW/glfw3native.h
  Classes/game/Ball.h

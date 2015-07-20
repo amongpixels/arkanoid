@@ -27,10 +27,19 @@ namespace arkanoid {
     void initPhysicsBody();
     
   public:
-    static char * spritePaths [BRICK_TYPES_COUNT];
+    static char* spritePaths [BRICK_TYPES_COUNT];
     static cocos2d::PhysicsMaterial material;
     
+    /**
+     * "destroy" this brick when ball collides with it. Doesn't really destroy
+     * the object, just removes it from physics simulation
+     */
     void destroy();
+    
+    /**
+     * After brick is destroyed it can be brought back to life with recreate()
+     */
+    void recreate();
     
     Brick(int);
 
