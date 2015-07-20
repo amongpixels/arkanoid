@@ -69,7 +69,6 @@ bool MenuScene::init() {
   cocos2d::Size visibleSize = cocos2d::Director::getInstance()->getVisibleSize();
   cocos2d::Vec2 origin = cocos2d::Director::getInstance()->getVisibleOrigin();
 
-  // Create and place logo in the middle
   this->createLogo(visibleSize);
   this->createMenu(visibleSize);
   this->createHighScore(visibleSize);

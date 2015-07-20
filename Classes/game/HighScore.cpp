@@ -20,7 +20,7 @@ arkanoid::HighScore::HighScore() {
     fclose(file);
   }
   else {
-    // No highscore has been ever saved, just create an empty file and dump a 0 in there
+    // No highscore has ever been saved, just create an empty file and dump a 0 in there
     file = fopen(arkanoid::HighScore::storagePath, "w");
     fprintf(file, "%d", this->score);
     fclose(file);
