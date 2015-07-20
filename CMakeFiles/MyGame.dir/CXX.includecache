@@ -6,6 +6,44 @@
 
 #IncludeRegexTransform: 
 
+/home/dragomir/git/arkanoid_default/Classes/AppDelegate.cpp
+AppDelegate.h
+/home/dragomir/git/arkanoid_default/Classes/AppDelegate.h
+
+/home/dragomir/git/arkanoid_default/Classes/AppDelegate.h
+cocos2d.h
+/home/dragomir/git/arkanoid_default/Classes/cocos2d.h
+scenes/LevelScene.h
+/home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.h
+scenes/MenuScene.h
+/home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/Ball.cpp
+Ball.h
+/home/dragomir/git/arkanoid_default/Classes/game/Ball.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/Ball.h
+memory
+-
+cocos2d.h
+/home/dragomir/git/arkanoid_default/Classes/game/cocos2d.h
+CollisionMasks.h
+/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
+Paddle.h
+/home/dragomir/git/arkanoid_default/Classes/game/Paddle.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/Paddle.cpp
+Paddle.h
+/home/dragomir/git/arkanoid_default/Classes/game/Paddle.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/Paddle.h
+cocos2d.h
+/home/dragomir/git/arkanoid_default/Classes/game/cocos2d.h
+CollisionMasks.h
+/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
+
 /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp
 LevelScene.h
 /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.h
@@ -25,12 +63,32 @@ game/Ball.h
 /home/dragomir/git/arkanoid_default/Classes/scenes/game/Ball.h
 game/BricksBoard.h
 /home/dragomir/git/arkanoid_default/Classes/scenes/game/BricksBoard.h
+game/HighScore.h
+/home/dragomir/git/arkanoid_default/Classes/scenes/game/HighScore.h
+
+/home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.cpp
+MenuScene.h
+/home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.h
 
 /home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.h
 cocos2d.h
 /home/dragomir/git/arkanoid_default/Classes/scenes/cocos2d.h
 LevelScene.h
 /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.h
+game/HighScore.h
+/home/dragomir/git/arkanoid_default/Classes/scenes/game/HighScore.h
+
+/home/dragomir/git/arkanoid_default/proj.linux/main.cpp
+../Classes/AppDelegate.h
+/home/dragomir/git/arkanoid_default/Classes/AppDelegate.h
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+string
+-
 
 /usr/include/GLFW/glfw3.h
 stddef.h
@@ -95,6 +153,12 @@ Brick.h
 Classes/game/Brick.h
 
 Classes/game/CollisionMasks.h
+
+Classes/game/HighScore.h
+cstdio
+-
+cocos2d.h
+Classes/game/cocos2d.h
 
 Classes/game/Paddle.h
 cocos2d.h

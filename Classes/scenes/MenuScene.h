@@ -10,9 +10,16 @@
 
 #include "cocos2d.h"
 #include "LevelScene.h"
+#include "game/HighScore.h"
 
 class MenuScene : public cocos2d::Layer {
 private:
+  arkanoid::HighScore highScore;
+  
+  void createLogo(const cocos2d::Size& visibleSize);
+  void createMenu(const cocos2d::Size& visibleSize);
+  void createHighScore(const cocos2d::Size& visibleSize);
+  
   void newGameButtonCallback (Ref* pSender);
   void exitButtonCallback (Ref* pSender);
 public:

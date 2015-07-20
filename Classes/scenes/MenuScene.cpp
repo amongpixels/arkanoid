@@ -17,6 +17,50 @@ cocos2d::Scene* MenuScene::createScene() {
   return scene;
 }
 
+void MenuScene::createLogo(const cocos2d::Size& visibleSize) {
+  auto logo = cocos2d::Sprite::create("menu/logo.png");
+  logo->setPosition(visibleSize.width * 0.5f, visibleSize.height - logo->getContentSize().height * 0.5 - 50.0f);
+  this->addChild(logo);
+}
+
+void MenuScene::createMenu(const cocos2d::Size& visibleSize) {
+  float offsetTop = 100.0f; // by how much offset the menu from the center top
+  
+  // New game button
+  auto newGameButton = cocos2d::MenuItemImage::create(
+    "menu/new_game_button_normal.png",
+    "menu/new_game_button_selected.png",
+    CC_CALLBACK_1(MenuScene::newGameButtonCallback, this)
+  );
+  newGameButton->setPosition(visibleSize.width * 0.5f, visibleSize.height * 0.5f - offsetTop);
+
+  // Exit button
+  auto exitButton = cocos2d::MenuItemImage::create(
+    "menu/exit_button_normal.png",
+    "menu/exit_button_selected.png",
+    CC_CALLBACK_1(MenuScene::exitButtonCallback, this)
+  );
+  exitButton->setPosition(
+    visibleSize.width * 0.5f, 
+    visibleSize.height * 0.5f - newGameButton->getContentSize().height - 20.0f - offsetTop
+  );
+
+  auto menu = cocos2d::Menu::create(newGameButton, exitButton, NULL);
+  menu->setPosition(cocos2d::Vec2::ZERO);
+  this->addChild(menu, 1);
+}
+
+void MenuScene::createHighScore(const cocos2d::Size& visibleSize) {
+  auto highScoreLabel = Label::createWithTTF(
+    std::string("Current high score: ") + std::to_string(this->highScore.getHighScore()),
+    "fonts/Marker Felt.ttf", 
+    24
+  );
+  highScoreLabel->setPosition(visibleSize.width * 0.5f, visibleSize.height * 0.5f);
+  
+  this->addChild(highScoreLabel);
+}
+
 bool MenuScene::init() {
 
   if (!cocos2d::Layer::init()) {
@@ -27,34 +71,9 @@ bool MenuScene::init() {
   cocos2d::Vec2 origin = cocos2d::Director::getInstance()->getVisibleOrigin();
 
   // Create and place logo in the middle
-  auto logo = cocos2d::Sprite::create("menu/logo.png");
-  logo->setPosition(visibleSize.width * 0.5f, visibleSize.height - logo->getContentSize().height * 0.5 - 50.0f);
-  this->addChild(logo);
-
-  // Create and place menu buttons
-  
-  // New game button
-  auto newGameButton = cocos2d::MenuItemImage::create(
-    "menu/new_game_button_normal.png",
-    "menu/new_game_button_selected.png",
-    CC_CALLBACK_1(MenuScene::newGameButtonCallback, this)
-  );
-  newGameButton->setPosition(visibleSize.width * 0.5f, visibleSize.height * 0.5f);
-
-  // Exit button
-  auto exitButton = cocos2d::MenuItemImage::create(
-    "menu/exit_button_normal.png",
-    "menu/exit_button_selected.png",
-    CC_CALLBACK_1(MenuScene::exitButtonCallback, this)
-  );
-  exitButton->setPosition(
-    visibleSize.width * 0.5f, 
-    visibleSize.height * 0.5f - newGameButton->getContentSize().height - 20.0f
-  );
-
-  auto menu = cocos2d::Menu::create(newGameButton, exitButton, NULL);
-  menu->setPosition(cocos2d::Vec2::ZERO);
-  this->addChild(menu, 1);
+  this->createLogo(visibleSize);
+  this->createMenu(visibleSize);
+  this->createHighScore(visibleSize);
 
   return true;
 }

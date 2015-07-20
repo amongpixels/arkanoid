@@ -29,8 +29,6 @@
         </df>
       </df>
       <df name="Classes">
-        <df name="events">
-        </df>
         <df name="game">
           <in>Ball.cpp</in>
           <in>Ball.h</in>
@@ -39,6 +37,8 @@
           <in>BricksBoard.cpp</in>
           <in>BricksBoard.h</in>
           <in>CollisionMasks.h</in>
+          <in>HighScore.cpp</in>
+          <in>HighScore.h</in>
           <in>Paddle.cpp</in>
           <in>Paddle.h</in>
         </df>

@@ -19,12 +19,14 @@
 #include "game/Paddle.h"
 #include "game/Ball.h"
 #include "game/BricksBoard.h"
+#include "game/HighScore.h"
 
 using namespace cocos2d;
 
 class LevelScene : public Layer
 {
 private:
+  arkanoid::HighScore highScore;
   
   int score, lives, gameState;
   

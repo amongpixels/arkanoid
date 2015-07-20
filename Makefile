@@ -301,6 +301,30 @@ Classes/game/BricksBoard.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.s
 .PHONY : Classes/game/BricksBoard.cpp.s
 
+Classes/game/HighScore.o: Classes/game/HighScore.cpp.o
+.PHONY : Classes/game/HighScore.o
+
+# target to build an object file
+Classes/game/HighScore.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o
+.PHONY : Classes/game/HighScore.cpp.o
+
+Classes/game/HighScore.i: Classes/game/HighScore.cpp.i
+.PHONY : Classes/game/HighScore.i
+
+# target to preprocess a source file
+Classes/game/HighScore.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.i
+.PHONY : Classes/game/HighScore.cpp.i
+
+Classes/game/HighScore.s: Classes/game/HighScore.cpp.s
+.PHONY : Classes/game/HighScore.s
+
+# target to generate assembly for a file
+Classes/game/HighScore.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.s
+.PHONY : Classes/game/HighScore.cpp.s
+
 Classes/game/Paddle.o: Classes/game/Paddle.cpp.o
 .PHONY : Classes/game/Paddle.o
 
@@ -425,6 +449,9 @@ help:
 	@echo "... Classes/game/BricksBoard.o"
 	@echo "... Classes/game/BricksBoard.i"
 	@echo "... Classes/game/BricksBoard.s"
+	@echo "... Classes/game/HighScore.o"
+	@echo "... Classes/game/HighScore.i"
+	@echo "... Classes/game/HighScore.s"
 	@echo "... Classes/game/Paddle.o"
 	@echo "... Classes/game/Paddle.i"
 	@echo "... Classes/game/Paddle.s"

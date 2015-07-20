@@ -158,6 +158,8 @@ void LevelScene::loseLife() {
 void LevelScene::gameWon() {
   this->gameState = GAME_STATE_WON;
   
+  this->highScore.saveHighScore(this->score);
+  
   this->ball->killVelocity();
   this->winLabel->setVisible(true);
   this->continueHint->setVisible(true);
@@ -165,6 +167,8 @@ void LevelScene::gameWon() {
 
 void LevelScene::gameOver() {
   this->gameState = GAME_STATE_OVER;
+  
+  this->highScore.saveHighScore(this->score);
   
   this->gameOverLabel->setVisible(true);
   this->continueHint->setVisible(true);

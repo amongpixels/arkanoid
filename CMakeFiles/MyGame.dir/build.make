@@ -167,9 +167,32 @@ CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.provides: CMakeFiles/MyGame
 
 CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o
 
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o: Classes/game/HighScore.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/game/HighScore.cpp
+
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dragomir/git/arkanoid_default/Classes/game/HighScore.cpp > CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dragomir/git/arkanoid_default/Classes/game/HighScore.cpp -o CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o
+
 CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o: Classes/scenes/MenuScene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.cpp
 
@@ -192,7 +215,7 @@ CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o: Classes/scenes/LevelScene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp
 
@@ -215,7 +238,7 @@ CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: proj.linux/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dragomir/git/arkanoid_default/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/proj.linux/main.cpp.o -c /home/dragomir/git/arkanoid_default/proj.linux/main.cpp
 
@@ -243,6 +266,7 @@ MyGame_OBJECTS = \
 "CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o" \
 "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
@@ -255,6 +279,7 @@ bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
@@ -296,6 +321,7 @@ CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o.
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/game/HighScore.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires

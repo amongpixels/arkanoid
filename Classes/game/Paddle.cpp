@@ -19,7 +19,7 @@ arkanoid::Paddle::Paddle() {
   this->sprite->setPhysicsBody(this->physicsBody);
 }
 
-cocos2d::Sprite * arkanoid::Paddle::getSprite() {
+cocos2d::Sprite* arkanoid::Paddle::getSprite() {
   return this->sprite;
 }
 

@@ -17,13 +17,13 @@ namespace arkanoid {
   private:
     const float offsetY = 100.0f;
     
-    cocos2d::Sprite * sprite;
-    cocos2d::PhysicsBody * physicsBody;
+    cocos2d::Sprite* sprite;
+    cocos2d::PhysicsBody* physicsBody;
   public:
     Paddle();
     
-    cocos2d::Sprite * getSprite ();
-    void setPosition (float);
+    cocos2d::Sprite* getSprite ();
+    void setPosition(float);
     
     virtual ~Paddle();
   private:
