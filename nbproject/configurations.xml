@@ -11,8 +11,6 @@
           <in>BricksBoard.cpp</in>
           <in>BricksBoard.h</in>
           <in>CollisionMasks.h</in>
-          <in>GameEntity.cpp</in>
-          <in>GameEntity.h</in>
           <in>Paddle.cpp</in>
           <in>Paddle.h</in>
         </df>
@@ -785,10 +783,6 @@
       <item path="Classes/game/BricksBoard.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes/game/CollisionMasks.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Classes/game/GameEntity.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Classes/game/GameEntity.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Classes/game/Paddle.cpp" ex="false" tool="1" flavor2="0">
       </item>

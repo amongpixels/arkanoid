@@ -24,7 +24,7 @@ void arkanoid::BricksBoard::createBoard(int width, int height, float screenWidth
     offsetY = 0.0;
     
     for (int y = 0 ; y < this->boardHeight ; y++) {
-      this->bricks.push_back(std::unique_ptr<arkanoid::Brick>(new Brick(BRICK_RED)));
+      this->bricks.push_back(new Brick(cocos2d::random<int>(0, BRICK_TYPES_COUNT-1)));
       
       /*
        * Because we don't know the size of the brick till we load the first file
@@ -46,7 +46,7 @@ void arkanoid::BricksBoard::createBoard(int width, int height, float screenWidth
   }
 }
 
-std::vector< std::shared_ptr<arkanoid::Brick> > * arkanoid::BricksBoard::getBricks() {
+std::vector<arkanoid::Brick*>* arkanoid::BricksBoard::getBricks() {
   return &this->bricks;
 }
 

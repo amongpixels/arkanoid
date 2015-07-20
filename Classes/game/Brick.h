@@ -23,21 +23,16 @@ namespace arkanoid {
   private:
     bool destroyed;
     int type;
-    bool onContactBegin(cocos2d::PhysicsContact& contact);
     
-    void initPhysicsBody ();
-    //void initCollisions ();
+    void initPhysicsBody();
     
   public:
-    
     static char * spritePaths [BRICK_TYPES_COUNT];
     static cocos2d::PhysicsMaterial material;
     
     void destroy();
     
     Brick(int);
-    //cocos2d::Sprite * getSprite();
-    //virtual ~Brick();
 
   };
 }

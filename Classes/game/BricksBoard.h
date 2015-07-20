@@ -21,7 +21,7 @@ namespace arkanoid {
     int boardWidth;
     int boardHeight;
     
-    std::vector <std::shared_ptr<arkanoid::Brick>> bricks;
+    std::vector<arkanoid::Brick*> bricks;
     
   public:
     
@@ -36,7 +36,7 @@ namespace arkanoid {
      */
     void createBoard (int width, int height, float screenWidth, float screenHeight);
     
-    std::vector <std::shared_ptr<arkanoid::Brick>> * getBricks ();
+    std::vector<arkanoid::Brick*>* getBricks ();
     
     virtual ~BricksBoard();
 

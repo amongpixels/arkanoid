@@ -39,8 +39,6 @@
           <in>BricksBoard.cpp</in>
           <in>BricksBoard.h</in>
           <in>CollisionMasks.h</in>
-          <in>GameEntity.cpp</in>
-          <in>GameEntity.h</in>
           <in>Paddle.cpp</in>
           <in>Paddle.h</in>
         </df>
@@ -77,6 +75,8 @@
         <df name="MyGame_CORE_PRE_BUILD.dir">
         </df>
         <df name="MyGame_PRE_BUILD.dir">
+        </df>
+        <df name="Progress">
         </df>
       </df>
       <df name="cocos2d">

@@ -6,26 +6,28 @@
 
 #IncludeRegexTransform: 
 
-/home/dragomir/git/arkanoid_default/Classes/game/Ball.cpp
-Ball.h
-/home/dragomir/git/arkanoid_default/Classes/game/Ball.h
+/home/dragomir/git/arkanoid_default/Classes/game/Brick.h
+cocos2d.h
+/home/dragomir/git/arkanoid_default/Classes/game/cocos2d.h
+CollisionMasks.h
+/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
 
-/home/dragomir/git/arkanoid_default/Classes/game/Ball.h
+/home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp
+BricksBoard.h
+/home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.h
+Brick.h
+/home/dragomir/git/arkanoid_default/Classes/game/Brick.h
+
+/home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.h
+vector
+-
 memory
 -
 cocos2d.h
 /home/dragomir/git/arkanoid_default/Classes/game/cocos2d.h
-CollisionMasks.h
-/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
-Paddle.h
-/home/dragomir/git/arkanoid_default/Classes/game/Paddle.h
+Brick.h
+/home/dragomir/git/arkanoid_default/Classes/game/Brick.h
 
-/home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
-
-/home/dragomir/git/arkanoid_default/Classes/game/Paddle.h
-cocos2d.h
-/home/dragomir/git/arkanoid_default/Classes/game/cocos2d.h
-CollisionMasks.h
 /home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
 
 /usr/include/GLFW/glfw3.h

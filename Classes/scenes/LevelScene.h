@@ -24,30 +24,40 @@ class LevelScene : public Layer
 {
 private:
   
-  int score;
-  int gameState;
+  int score, lives, gameState;
   
   // These are used to limit bounds around the level so the ball doesn't fly off
-  cocos2d::PhysicsBody * worldBoundBodies [4];
-  cocos2d::Node * worldBoundNodes [4];
+  cocos2d::PhysicsBody* worldBoundBodies [4];
+  cocos2d::Node* worldBoundNodes [4];
   
-  std::unique_ptr <arkanoid::Ball> ball;
-  std::unique_ptr <arkanoid::BricksBoard> bricksBoard;
-  std::unique_ptr <arkanoid::Paddle> paddle;
+  std::unique_ptr<arkanoid::Ball> ball;
+  std::unique_ptr<arkanoid::BricksBoard> bricksBoard;
+  std::unique_ptr<arkanoid::Paddle> paddle;
   
-  EventListenerMouse * mouseEventListener;
+  cocos2d::Label *scoreLabel, *livesLabel, *gameOverLabel, *gameOverHint;
   
-  void createWorldBounds (float worldWidth, float worldHeight);
-  void createPaddle ();
-  void createBall ();
-  void createBricks ();
+  EventListenerMouse* mouseEventListener;
   
-  void setupMouseEvents ();
-  void setupCollisionEvents ();
+  void createWorldBounds(float worldWidth, float worldHeight);
+  void createPaddle();
+  void createBall();
+  void createBricks(const cocos2d::Size& visibleSize);
+  void createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visibleSize);
   
-  void onMouseMove (Event * );
-  void onMouseClick (Event * );
-  bool onContactBegin (cocos2d::PhysicsContact &);
+  void updateScoreUI();
+  void updateLivesUI();
+  
+  void restartGame();
+  void loseLife();
+  void gainScore(int increase);
+  void gameOver();
+  
+  void setupMouseEvents();
+  void setupCollisionEvents();
+  
+  void onMouseMove(Event* event);
+  void onMouseClick(Event* event);
+  bool onContactBegin(cocos2d::PhysicsContact& contact);
   
 public:
     static Scene* createScene();

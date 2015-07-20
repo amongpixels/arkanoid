@@ -20,13 +20,28 @@ namespace arkanoid {
   
   class Ball {
   private:
-    cocos2d::Sprite * sprite;
-    cocos2d::PhysicsBody * physicsBody;
+    cocos2d::Sprite* sprite;
+    cocos2d::PhysicsBody* physicsBody;
   public:
     Ball();
-    cocos2d::Sprite * getSprite ();
-    void alignWithPaddle (const std::unique_ptr<arkanoid::Paddle> &);
-    void applyVelocity ();
+    cocos2d::Sprite* getSprite ();
+    
+    /**
+     * Given the paddle it places the ball on it
+     * @param paddle
+     */
+    void alignWithPaddle(const std::unique_ptr<arkanoid::Paddle>& paddle);
+    
+    /**
+     * Kickstarts the ball to move
+     */
+    void applyVelocity();
+    
+    /**
+     * Reduces all ball velocity to zero
+     */
+    void killVelocity();
+    
     virtual ~Ball();
   
 
