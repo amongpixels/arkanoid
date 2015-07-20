@@ -26,6 +26,11 @@
 },
 {
   "directory": "/home/dragomir/git/arkanoid_default",
+  "command": "/usr/bin/g++   -DLINUX  -fno-exceptions -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall -DCOCOS2D_DEBUG=1 -I/usr/local/include/GLFW -I/usr/include/GLFW -I/home/dragomir/git/arkanoid_default/cocos2d/cocos -I/home/dragomir/git/arkanoid_default/Classes    -o CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.cpp",
+  "file": "/home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.cpp"
+},
+{
+  "directory": "/home/dragomir/git/arkanoid_default",
   "command": "/usr/bin/g++   -DLINUX  -fno-exceptions -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall -DCOCOS2D_DEBUG=1 -I/usr/local/include/GLFW -I/usr/include/GLFW -I/home/dragomir/git/arkanoid_default/cocos2d/cocos -I/home/dragomir/git/arkanoid_default/Classes    -o CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o -c /home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp",
   "file": "/home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp"
 },

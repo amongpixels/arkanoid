@@ -119,6 +119,7 @@ set(GAME_SRC
   Classes/game/Ball.cpp
   Classes/game/Brick.cpp
   Classes/game/BricksBoard.cpp
+  Classes/scenes/MenuScene.cpp
   Classes/scenes/LevelScene.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
@@ -129,6 +130,7 @@ set(GAME_HEADERS
   Classes/game/Ball.h
   Classes/game/Brick.h
   Classes/game/BricksBoard.h
+  Classes/scenes/MenuScene.h
   Classes/scenes/LevelScene.h
   ${PLATFORM_SPECIFIC_HEADERS}
 )

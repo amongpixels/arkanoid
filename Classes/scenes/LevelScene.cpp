@@ -3,18 +3,14 @@
 USING_NS_CC;
 
 Scene* LevelScene::createScene() {
-  // 'scene' is an autorelease object
   auto scene = Scene::createWithPhysics();
   scene->getPhysicsWorld()->setDebugDrawMask(cocos2d::PhysicsWorld::DEBUGDRAW_ALL);
 
-  // 'layer' is an autorelease object
   auto layer = LevelScene::create();
 
   // add layer as a child to scene
   scene->addChild(layer);
-
-
-  // return the scene
+  
   return scene;
 }
 
@@ -25,7 +21,7 @@ void LevelScene::onMouseMove(Event* event) {
 
   this->paddle->setPosition(e->getCursorX());
 
-  cocos2d::log(str.c_str());
+  //cocos2d::log(str.c_str());
 }
 
 bool LevelScene::onContactBegin(cocos2d::PhysicsContact& contact) {
@@ -41,6 +37,13 @@ bool LevelScene::onContactBegin(cocos2d::PhysicsContact& contact) {
     } else if (nodeA->getTag() == BALL_TAG && nodeB->getTag() == BRICK_TAG) {
       brick = (arkanoid::Brick *)(nodeB);
     }
+    // Check if we are dealing with ball vs bottom-world-bound collision
+    else if 
+      ((nodeA->getTag() == BALL_TAG && nodeB->getTag() == WORLD_BOUND_BOTTOM) ||
+       (nodeA->getTag() == WORLD_BOUND_BOTTOM && nodeB->getTag() == BALL_TAG)) {
+      // you lost a life!
+    }
+    
     
     if (brick) {
       brick->destroy();
@@ -71,6 +74,7 @@ void LevelScene::createWorldBounds(float worldWidth, float worldHeight) {
     this->worldBoundNodes[i] = cocos2d::Node::create();
     this->worldBoundNodes[i]->setPosition(positions[i]);
     this->worldBoundNodes[i]->setPhysicsBody(this->worldBoundBodies[i]);
+    this->worldBoundNodes[i]->setTag(i);
 
     this->addChild(this->worldBoundNodes[i]);
   }
@@ -78,8 +82,10 @@ void LevelScene::createWorldBounds(float worldWidth, float worldHeight) {
 
 void LevelScene::createBricks() {
   
+  Size visibleSize = Director::getInstance()->getVisibleSize();
+  
   this->bricksBoard = std::unique_ptr<arkanoid::BricksBoard> (new arkanoid::BricksBoard());
-  this->bricksBoard->createBoard(4, 4);
+  this->bricksBoard->createBoard(4, 4, visibleSize.width, visibleSize.height);
   
   for (auto brick : * this->bricksBoard->getBricks()) {
     this->addChild(brick.get());
@@ -169,10 +175,4 @@ bool LevelScene::init() {
   return true;
 }
 
-void LevelScene::menuCloseCallback(Ref* pSender) {
-  Director::getInstance()->end();
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-  exit(0);
-#endif
-}

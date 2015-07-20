@@ -1,5 +1,4 @@
 #include "AppDelegate.h"
-#include "scenes/LevelScene.h"
 
 USING_NS_CC;
 
@@ -47,7 +46,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = LevelScene::createScene();
+    auto menu = MenuScene::createScene();
     
     //scene->getEventDispatcher();
     
@@ -55,7 +54,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //mouseEvents->onMouseMove = CC_CALLBACK_1
 
     // run
-    director->runWithScene(scene);
+    director->runWithScene(menu);
 
     return true;
 }

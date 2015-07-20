@@ -26,12 +26,19 @@ namespace arkanoid {
   public:
     
     BricksBoard();
-    void createBoard (int, int);
+    /**
+     * Creates a brick board of width x height bricks, centers in the screen of 
+     * given dimensions
+     * @param width
+     * @param height
+     * @param screenWidth
+     * @param screenHeight
+     */
+    void createBoard (int width, int height, float screenWidth, float screenHeight);
     
     std::vector <std::shared_ptr<arkanoid::Brick>> * getBricks ();
     
     virtual ~BricksBoard();
-  
 
   };
 }

@@ -349,6 +349,30 @@ Classes/scenes/LevelScene.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.s
 .PHONY : Classes/scenes/LevelScene.cpp.s
 
+Classes/scenes/MenuScene.o: Classes/scenes/MenuScene.cpp.o
+.PHONY : Classes/scenes/MenuScene.o
+
+# target to build an object file
+Classes/scenes/MenuScene.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o
+.PHONY : Classes/scenes/MenuScene.cpp.o
+
+Classes/scenes/MenuScene.i: Classes/scenes/MenuScene.cpp.i
+.PHONY : Classes/scenes/MenuScene.i
+
+# target to preprocess a source file
+Classes/scenes/MenuScene.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.i
+.PHONY : Classes/scenes/MenuScene.cpp.i
+
+Classes/scenes/MenuScene.s: Classes/scenes/MenuScene.cpp.s
+.PHONY : Classes/scenes/MenuScene.s
+
+# target to generate assembly for a file
+Classes/scenes/MenuScene.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.s
+.PHONY : Classes/scenes/MenuScene.cpp.s
+
 proj.linux/main.o: proj.linux/main.cpp.o
 .PHONY : proj.linux/main.o
 
@@ -407,6 +431,9 @@ help:
 	@echo "... Classes/scenes/LevelScene.o"
 	@echo "... Classes/scenes/LevelScene.i"
 	@echo "... Classes/scenes/LevelScene.s"
+	@echo "... Classes/scenes/MenuScene.o"
+	@echo "... Classes/scenes/MenuScene.i"
+	@echo "... Classes/scenes/MenuScene.s"
 	@echo "... proj.linux/main.o"
 	@echo "... proj.linux/main.i"
 	@echo "... proj.linux/main.s"

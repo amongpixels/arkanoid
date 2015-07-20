@@ -10,6 +10,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/dragomir/git/arkanoid_default/Classes/game/BricksBoard.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o"
   "/home/dragomir/git/arkanoid_default/Classes/game/Paddle.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/game/Paddle.cpp.o"
   "/home/dragomir/git/arkanoid_default/Classes/scenes/LevelScene.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o"
+  "/home/dragomir/git/arkanoid_default/Classes/scenes/MenuScene.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o"
   "/home/dragomir/git/arkanoid_default/proj.linux/main.cpp" "/home/dragomir/git/arkanoid_default/CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

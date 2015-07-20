@@ -15,15 +15,15 @@ char * arkanoid::Brick::spritePaths [BRICK_TYPES_COUNT] = {
 
 cocos2d::PhysicsMaterial arkanoid::Brick::material = cocos2d::PhysicsMaterial(0.1f, 1.0f, 0.0f);
 
-arkanoid::Brick::Brick(int type, float offsetX, float offsetY) {
+arkanoid::Brick::Brick(int type) {
   
   // Because we are creating our own sprite type remember to add it to cocos2d memory management release pool
   if (this->initWithFile(arkanoid::Brick::spritePaths[type])) {
-    this->autorelease();
+    //this->autorelease();
   }
   else {
-    auto sprite = this; // haha what
-    CC_SAFE_DELETE(sprite);
+    //auto sprite = this; // haha what
+    //CC_SAFE_DELETE(sprite);
     return;
   }
   
@@ -36,11 +36,11 @@ arkanoid::Brick::Brick(int type, float offsetX, float offsetY) {
   physicsBody->setDynamic(false);
   
   this->setTag(BRICK_TAG); // Tags are used in contact callbacks so we know it's a brick!
-  this->setPosition(offsetX, offsetY);
+  //this->setPosition(offsetX, offsetY);
   this->setPhysicsBody(physicsBody);
   
   // Let brick handle its own collision
-  auto contactListener = cocos2d::EventListenerPhysicsContact::create();
+  //auto contactListener = cocos2d::EventListenerPhysicsContact::create();
   //contactListener->onContactBegin = CC_CALLBACK_1(arkanoid::Brick::onContactBegin, this);
   //this->getSprite()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this->sprite);
 

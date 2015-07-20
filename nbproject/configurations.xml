@@ -18,6 +18,8 @@
         </df>
         <df name="scenes">
           <in>LevelScene.cpp</in>
+          <in>MenuScene.cpp</in>
+          <in>MenuScene.h</in>
         </df>
         <in>AppDelegate.cpp</in>
       </df>
@@ -795,6 +797,10 @@
       <item path="Classes/scenes/LevelScene.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="Classes/scenes/MenuScene.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classes/scenes/MenuScene.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cocos2d/cocos/2d/CCAction.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">

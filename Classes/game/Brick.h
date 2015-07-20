@@ -35,7 +35,7 @@ namespace arkanoid {
     
     void destroy();
     
-    Brick(int, float, float);
+    Brick(int);
     //cocos2d::Sprite * getSprite();
     //virtual ~Brick();
 

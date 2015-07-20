@@ -4,6 +4,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o"
   "CMakeFiles/MyGame.dir/Classes/game/Brick.cpp.o"
   "CMakeFiles/MyGame.dir/Classes/game/BricksBoard.cpp.o"
+  "CMakeFiles/MyGame.dir/Classes/scenes/MenuScene.cpp.o"
   "CMakeFiles/MyGame.dir/Classes/scenes/LevelScene.cpp.o"
   "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
   "bin/MyGame.pdb"

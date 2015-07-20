@@ -20,6 +20,8 @@
           </df>
           <df name="fonts">
           </df>
+          <df name="menu">
+          </df>
           <df name="paddle">
           </df>
           <df name="res">
@@ -45,6 +47,8 @@
         <df name="scenes">
           <in>LevelScene.cpp</in>
           <in>LevelScene.h</in>
+          <in>MenuScene.cpp</in>
+          <in>MenuScene.h</in>
         </df>
         <in>AppDelegate.cpp</in>
         <in>AppDelegate.h</in>
@@ -73,6 +77,8 @@
         <df name="MyGame_CORE_PRE_BUILD.dir">
         </df>
         <df name="MyGame_PRE_BUILD.dir">
+        </df>
+        <df name="Progress">
         </df>
       </df>
       <df name="cocos2d">
@@ -4630,6 +4636,8 @@
         <df name="bricks">
         </df>
         <df name="fonts">
+        </df>
+        <df name="menu">
         </df>
         <df name="paddle">
         </df>
