@@ -1,9 +1,7 @@
 #include "LevelScene.h"
 
-USING_NS_CC;
-
-Scene* LevelScene::createScene() {
-  auto scene = Scene::createWithPhysics();
+cocos2d::Scene* LevelScene::createScene() {
+  auto scene = cocos2d::Scene::createWithPhysics();
   //scene->getPhysicsWorld()->setDebugDrawMask(cocos2d::PhysicsWorld::DEBUGDRAW_ALL);
 
   auto layer = LevelScene::create();
@@ -15,10 +13,10 @@ Scene* LevelScene::createScene() {
 
 void LevelScene::createWorldBounds(float worldWidth, float worldHeight) {
   cocos2d::Vec2 positions [] = {
-    Vec2(worldWidth * 0.5f, worldHeight), // top bound
-    Vec2(worldWidth, worldHeight * 0.5f), // right bound
-    Vec2(worldWidth * 0.5f, 0.0f), // bottom bound
-    Vec2(0.0f, worldHeight * 0.5f) // left bound
+    cocos2d::Vec2(worldWidth * 0.5f, worldHeight), // top bound
+    cocos2d::Vec2(worldWidth, worldHeight * 0.5f), // right bound
+    cocos2d::Vec2(worldWidth * 0.5f, 0.0f), // bottom bound
+    cocos2d::Vec2(0.0f, worldHeight * 0.5f) // left bound
   };
   
   auto material = cocos2d::PhysicsMaterial(0.1f, 1.0f, 0.0f);
@@ -67,7 +65,7 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
   float padding = 20.0f; // how much padding of the edges of the screen UI labels have
   
   // Score label
-  this->scoreLabel = Label::createWithTTF("Score:", "fonts/Marker Felt.ttf", 24);
+  this->scoreLabel = cocos2d::Label::createWithTTF("Score:", "fonts/Marker Felt.ttf", 24);
   this->scoreLabel->setAnchorPoint(cocos2d::Vec2(0.0f, 0.0f));
   this->scoreLabel->setPosition(
     origin.x + padding, 
@@ -75,7 +73,7 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
   );
   
   // Lives label
-  this->livesLabel = Label::createWithTTF("Lives:", "fonts/Marker Felt.ttf", 24);
+  this->livesLabel = cocos2d::Label::createWithTTF("Lives:", "fonts/Marker Felt.ttf", 24);
   this->livesLabel->setAnchorPoint(cocos2d::Vec2(0.0f, 0.0f));
   this->livesLabel->setPosition(
     origin.x + padding,
@@ -85,7 +83,7 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
   // TODO: rewrite below, organise in some sort of layers/screens for each situation
   
   // Game over label
-  this->gameOverLabel = Label::createWithTTF("GAME OVER", "fonts/Marker Felt.ttf", 42);
+  this->gameOverLabel = cocos2d::Label::createWithTTF("GAME OVER", "fonts/Marker Felt.ttf", 42);
   this->gameOverLabel->setPosition(
     origin.x + visibleSize.width * 0.5f,
     origin.y + visibleSize.height * 0.5f
@@ -93,7 +91,7 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
   this->gameOverLabel->setVisible(false);
   
   // Hint after game is over or won
-  this->continueHint = Label::createWithTTF("Press mouse button to start over, ESC to go back to the menu", "fonts/Marker Felt.ttf", 24);
+  this->continueHint = cocos2d::Label::createWithTTF("Press mouse button to start over, ESC to go back to the menu", "fonts/Marker Felt.ttf", 24);
   this->continueHint->setPosition(
     origin.x + visibleSize.width * 0.5f,
     origin.y + visibleSize.height * 0.5f - this->gameOverLabel->getContentSize().height * 1.5f
@@ -101,7 +99,7 @@ void LevelScene::createUI(const cocos2d::Vec2& origin, const cocos2d::Size& visi
   this->continueHint->setVisible(false);
   
   // Game won label
-  this->winLabel = Label::createWithTTF("STAGE CLEARED", "fonts/Marker Felt.ttf", 42);
+  this->winLabel = cocos2d::Label::createWithTTF("STAGE CLEARED", "fonts/Marker Felt.ttf", 42);
   this->winLabel->setPosition(
     origin.x + visibleSize.width * 0.5f,
     origin.y + visibleSize.height * 0.5f
@@ -192,7 +190,7 @@ void LevelScene::setupCollisionEvents() {
 }
 
 void LevelScene::setupMouseEvents() {
-  auto mouseEventListener = EventListenerMouse::create();
+  auto mouseEventListener = cocos2d::EventListenerMouse::create();
   mouseEventListener->onMouseMove = CC_CALLBACK_1(LevelScene::onMouseMove, this);
   mouseEventListener->onMouseDown = CC_CALLBACK_1(LevelScene::onMouseClick, this);
   this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(mouseEventListener, this);
@@ -206,8 +204,8 @@ void LevelScene::setupKeyboardEvents() {
 
 // CALLBACKS start here
 
-void LevelScene::onMouseMove (Event* event) {
-  EventMouse* e = (EventMouse*) event;
+void LevelScene::onMouseMove (cocos2d::Event* event) {
+  cocos2d::EventMouse* e = (cocos2d::EventMouse*) event;
   
   this->paddle->setPosition(e->getCursorX());
   
@@ -216,7 +214,7 @@ void LevelScene::onMouseMove (Event* event) {
   }
 }
 
-void LevelScene::onMouseClick(Event* event) {
+void LevelScene::onMouseClick(cocos2d::Event* event) {
   if (this->gameState == GAME_STATE_INITIAL) {
     this->gameState = GAME_STATE_PLAYING;
     
@@ -259,9 +257,9 @@ bool LevelScene::onContactBegin (cocos2d::PhysicsContact& contact) {
   return true;
 }
 
-void LevelScene::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
+void LevelScene::onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event) {
   // On escape go back to menu
-  if (keyCode == EventKeyboard::KeyCode::KEY_ESCAPE) {
+  if (keyCode == cocos2d::EventKeyboard::KeyCode::KEY_ESCAPE) {
     auto menu = MenuScene::createScene();
     cocos2d::Director::getInstance()->replaceScene(menu);
   }
@@ -281,12 +279,12 @@ void LevelScene::resetBallPosition(float dt) {
 }
 
 bool LevelScene::init() {
-  if (!Layer::init()) {
+  if (!cocos2d::Layer::init()) {
     return false;
   }
   
-  Size visibleSize = Director::getInstance()->getVisibleSize();
-  Vec2 origin = Director::getInstance()->getVisibleOrigin();
+  cocos2d::Size visibleSize = cocos2d::Director::getInstance()->getVisibleSize();
+  cocos2d::Vec2 origin = cocos2d::Director::getInstance()->getVisibleOrigin();
   
   this->createBricks(visibleSize);
   this->createPaddle();

@@ -51,7 +51,7 @@ void MenuScene::createMenu(const cocos2d::Size& visibleSize) {
 }
 
 void MenuScene::createHighScore(const cocos2d::Size& visibleSize) {
-  auto highScoreLabel = Label::createWithTTF(
+  auto highScoreLabel = cocos2d::Label::createWithTTF(
     std::string("Current high score: ") + std::to_string(this->highScore.getHighScore()),
     "fonts/Marker Felt.ttf", 
     24
@@ -62,7 +62,6 @@ void MenuScene::createHighScore(const cocos2d::Size& visibleSize) {
 }
 
 bool MenuScene::init() {
-
   if (!cocos2d::Layer::init()) {
     return false;
   }

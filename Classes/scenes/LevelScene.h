@@ -21,9 +21,7 @@
 #include "game/BricksBoard.h"
 #include "game/HighScore.h"
 
-using namespace cocos2d;
-
-class LevelScene : public Layer
+class LevelScene : public cocos2d::Layer
 {
 private:
   arkanoid::HighScore highScore;
@@ -61,13 +59,13 @@ private:
   void setupCollisionEvents();
   void setupKeyboardEvents();
   
-  void onMouseMove(Event* event);
-  void onMouseClick(Event* event);
-  void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
+  void onMouseMove(cocos2d::Event* event);
+  void onMouseClick(cocos2d::Event* event);
+  void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
   bool onContactBegin(cocos2d::PhysicsContact& contact);
   
 public:
-    static Scene* createScene();
+    static cocos2d::Scene* createScene();
 
     virtual bool init();
     
