@@ -2,29 +2,113 @@
 
 USING_NS_CC;
 
-Scene* LevelScene::createScene() {
+Scene* LevelScene::createScene () {
+  
   auto scene = Scene::createWithPhysics();
   scene->getPhysicsWorld()->setDebugDrawMask(cocos2d::PhysicsWorld::DEBUGDRAW_ALL);
 
   auto layer = LevelScene::create();
-
-  // add layer as a child to scene
+  
   scene->addChild(layer);
   
   return scene;
 }
 
-void LevelScene::onMouseMove(Event* event) {
+void LevelScene::createWorldBounds (float worldWidth, float worldHeight) {
+
+  cocos2d::Vec2 positions [] = {
+    Vec2(worldWidth * 0.5f, worldHeight), // top bound
+    Vec2(worldWidth, worldHeight * 0.5f), // right bound
+    Vec2(worldWidth * 0.5f, 0.0f), // bottom bound
+    Vec2(0.0f, worldHeight * 0.5f) // left bound
+  };
+  
+  auto material = cocos2d::PhysicsMaterial(0.1f, 1.0f, 0.0f);
+
+  for (int i = 0; i < 4; i++) {
+    this->worldBoundBodies[i] = cocos2d::PhysicsBody::createBox(cocos2d::Size(i % 2 == 0 ? worldWidth : 1.0f, i % 2 == 0 ? 1.0f : worldHeight), material);
+    this->worldBoundBodies[i]->setDynamic(false);
+    
+    this->worldBoundNodes[i] = cocos2d::Node::create();
+    this->worldBoundNodes[i]->setPosition(positions[i]);
+    this->worldBoundNodes[i]->setPhysicsBody(this->worldBoundBodies[i]);
+    this->worldBoundNodes[i]->setTag(i);
+
+    this->addChild(this->worldBoundNodes[i]);
+  }
+}
+
+void LevelScene::createBricks () {
+  
+  Size visibleSize = Director::getInstance()->getVisibleSize();
+  
+  this->bricksBoard = std::unique_ptr<arkanoid::BricksBoard> (new arkanoid::BricksBoard());
+  this->bricksBoard->createBoard(8, 6, visibleSize.width, visibleSize.height);
+  
+  for (auto brick : * this->bricksBoard->getBricks()) {
+    this->addChild(brick.get());
+  }
+}
+
+void LevelScene::createPaddle () {
+  
+  this->paddle = std::unique_ptr<arkanoid::Paddle> (new arkanoid::Paddle());
+  this->addChild(this->paddle->getSprite());
+  
+  // Set the paddle in the middle of the screen
+  this->paddle->setPosition(cocos2d::Director::getInstance()->getVisibleSize().width * 0.5f);
+  
+}
+
+void LevelScene::createBall () {
+  
+  this->ball = std::unique_ptr<arkanoid::Ball> (new arkanoid::Ball());
+  this->addChild(this->ball->getSprite());
+  
+  this->ball->alignWithPaddle(this->paddle);
+}
+
+void LevelScene::setupCollisionEvents () {
+  
+  auto contactListener = cocos2d::EventListenerPhysicsContact::create();
+  contactListener->onContactBegin = CC_CALLBACK_1(LevelScene::onContactBegin, this);
+  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
+}
+
+void LevelScene::setupMouseEvents () {
+  
+  this->mouseEventListener = EventListenerMouse::create();
+  this->mouseEventListener->onMouseMove = CC_CALLBACK_1(LevelScene::onMouseMove, this);
+  this->mouseEventListener->onMouseDown = CC_CALLBACK_1(LevelScene::onMouseClick, this);
+  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(this->mouseEventListener, this);
+}
+
+void LevelScene::onMouseMove (Event* event) {
+  
   EventMouse* e = (EventMouse*) event;
   std::string str = "MousePosition X:";
   str = str + std::to_string(e->getCursorX()) + " Y:" + std::to_string(e->getCursorY());
 
   this->paddle->setPosition(e->getCursorX());
+  
+  if (gameState == GAME_STATE_INITIAL) {
+    this->ball->alignWithPaddle(this->paddle);
+  }
 
   //cocos2d::log(str.c_str());
 }
 
-bool LevelScene::onContactBegin(cocos2d::PhysicsContact& contact) {
+void LevelScene::onMouseClick(Event* event) {
+  
+  if (gameState == GAME_STATE_INITIAL) {
+    gameState = GAME_STATE_PLAYING;
+    
+    this->ball->applyVelocity();
+  }
+}
+
+bool LevelScene::onContactBegin (cocos2d::PhysicsContact& contact) {
+  
   auto nodeA = contact.getShapeA()->getBody()->getNode();
   auto nodeB = contact.getShapeB()->getBody()->getNode();
   
@@ -56,70 +140,24 @@ bool LevelScene::onContactBegin(cocos2d::PhysicsContact& contact) {
   return true;
 }
 
-void LevelScene::createWorldBounds(float worldWidth, float worldHeight) {
-
-  cocos2d::Vec2 positions [] = {
-    Vec2(worldWidth * 0.5f, worldHeight), // top bound
-    Vec2(worldWidth, worldHeight * 0.5f), // right bound
-    Vec2(worldWidth * 0.5f, 0.0f), // bottom bound
-    Vec2(0.0f, worldHeight * 0.5f) // left bound
-  };
+bool LevelScene::init () {
   
-  auto material = cocos2d::PhysicsMaterial(0.1f, 1.0f, 0.0f);
-
-  for (int i = 0; i < 4; i++) {
-    this->worldBoundBodies[i] = cocos2d::PhysicsBody::createBox(cocos2d::Size(i % 2 == 0 ? worldWidth : 1.0f, i % 2 == 0 ? 1.0f : worldHeight), material);
-    this->worldBoundBodies[i]->setDynamic(false);
-    
-    this->worldBoundNodes[i] = cocos2d::Node::create();
-    this->worldBoundNodes[i]->setPosition(positions[i]);
-    this->worldBoundNodes[i]->setPhysicsBody(this->worldBoundBodies[i]);
-    this->worldBoundNodes[i]->setTag(i);
-
-    this->addChild(this->worldBoundNodes[i]);
-  }
-}
-
-void LevelScene::createBricks() {
-  
-  Size visibleSize = Director::getInstance()->getVisibleSize();
-  
-  this->bricksBoard = std::unique_ptr<arkanoid::BricksBoard> (new arkanoid::BricksBoard());
-  this->bricksBoard->createBoard(4, 4, visibleSize.width, visibleSize.height);
-  
-  for (auto brick : * this->bricksBoard->getBricks()) {
-    this->addChild(brick.get());
-  }
-  
-  auto contactListener = cocos2d::EventListenerPhysicsContact::create();
-  contactListener->onContactBegin = CC_CALLBACK_1(LevelScene::onContactBegin, this);
-  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
-
-  //cocos2d::schedule(CC_SCHEDULE_SELECTOR(PhysicsDemoCollisionProcessing::tick), 0.3f);
-  
-}
-
-// on "init" you need to initialize your instance
-
-bool LevelScene::init() {
-
-  //////////////////////////////
-  // 1. super init first
   if (!Layer::init()) {
     return false;
   }
-
-  this->paddle = std::unique_ptr<arkanoid::Paddle> (new arkanoid::Paddle());
-  this->addChild(this->paddle->getSprite());
-
-  this->ball = std::unique_ptr<arkanoid::Ball> (new arkanoid::Ball());
   
-  this->createBricks();
+  this->gameState = GAME_STATE_INITIAL;
 
   Size visibleSize = Director::getInstance()->getVisibleSize();
   Vec2 origin = Director::getInstance()->getVisibleOrigin();
-
+  
+  this->createBricks();
+  this->createPaddle();
+  this->createBall();
   this->createWorldBounds(visibleSize.width, visibleSize.height);
+  
+  this->setupCollisionEvents();
+  this->setupMouseEvents();
 
   /*
   /////////////////////////////
@@ -165,13 +203,6 @@ bool LevelScene::init() {
   this->addChild(sprite, 0);
     
    */
-
-  this->addChild(this->ball->getSprite());
-
-  this->mouseEventListener = EventListenerMouse::create();
-  this->mouseEventListener->onMouseMove = CC_CALLBACK_1(LevelScene::onMouseMove, this);
-  this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(this->mouseEventListener, this);
-
   return true;
 }
 

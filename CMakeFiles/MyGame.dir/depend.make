@@ -247,6 +247,7 @@ CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: cocos2d/cocos/renderer/ccShader
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: Classes/game/Ball.cpp
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: Classes/game/Ball.h
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: Classes/game/CollisionMasks.h
+CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: Classes/game/Paddle.h
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: /usr/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: /usr/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o: cocos2d/cocos/2d/CCAction.h

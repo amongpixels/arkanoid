@@ -10,8 +10,11 @@
 
 #define BALL_TAG 11
 
+#include <memory>
+
 #include "cocos2d.h"
 #include "CollisionMasks.h"
+#include "Paddle.h"
 
 namespace arkanoid {
   
@@ -22,6 +25,8 @@ namespace arkanoid {
   public:
     Ball();
     cocos2d::Sprite * getSprite ();
+    void alignWithPaddle (const std::unique_ptr<arkanoid::Paddle> &);
+    void applyVelocity ();
     virtual ~Ball();
   
 

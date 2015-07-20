@@ -248,6 +248,7 @@ CMakeFiles/MyGame.dir/Classes/game/Ball.cpp.o
  /home/dragomir/git/arkanoid_default/Classes/game/Ball.cpp
  /home/dragomir/git/arkanoid_default/Classes/game/Ball.h
  /home/dragomir/git/arkanoid_default/Classes/game/CollisionMasks.h
+ /home/dragomir/git/arkanoid_default/Classes/game/Paddle.h
  /usr/include/GLFW/glfw3.h
  /usr/include/GLFW/glfw3native.h
  cocos2d/cocos/2d/CCAction.h

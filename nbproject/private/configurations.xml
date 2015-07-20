@@ -78,8 +78,6 @@
         </df>
         <df name="MyGame_PRE_BUILD.dir">
         </df>
-        <df name="Progress">
-        </df>
       </df>
       <df name="cocos2d">
         <df name="build">
